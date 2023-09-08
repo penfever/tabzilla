@@ -448,9 +448,9 @@ def get_experiment_parser():
     experiment_parser.add(
         "--subset_rows_method",
         type=str,
-        choices=["random", "first"],
+        choices=["random", "first", "kmeans", "coreset", "closest"],
         default="random",
-        help="Method for selecting rows. 'random' means select randomly, 'first' means select the first rows.",
+        help="Method for selecting rows, one of 'random', 'first', 'kmeans', 'coreset', 'closest'.",
     )
     experiment_parser.add(
         "--subset_features_method",
@@ -458,5 +458,12 @@ def get_experiment_parser():
         choices=["random", "first", "mutual_information"],
         default="random",
         help="Method for selecting features. 'random' means select randomly, 'first' means select the first features, 'mutual information' wraps sklearn's mutual_info_classif.",
+    )
+    experiment_parser.add(
+        "--y_equalizer",
+        type=str,
+        choices=["none", "equal", "proportion"],
+        default="none",
+        help="Method for equalizing the number of samples in each class. 'none' means do nothing, 'equal' means equalize the number of samples in each class, 'proportion' means equalize the proportion of samples in each class.",
     )
     return experiment_parser

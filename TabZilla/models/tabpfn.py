@@ -13,7 +13,8 @@ class TabPFNModel(BaseModel):
             self.model = TabPFNClassifier(device='cuda', N_ensemble_configurations=32)
 
     def fit(self, X, y, X_val=None, y_val=None):
-        return super().fit(X, y)
+        self.model.fit(X, y, overwrite_warning=True)
+        return [], []
 
     def predict_helper(self, X):
         return self.model.predict(X)

@@ -109,6 +109,7 @@ class TabZillaObjective(object):
                 "cat_dims",
                 "num_classes",
                 "logging_period",
+                "y_equalizer",
             ],
         )
 
@@ -137,6 +138,7 @@ class TabZillaObjective(object):
             subset_rows=self.experiment_args.subset_rows,
             subset_features_method=self.experiment_args.subset_features_method,
             subset_rows_method=self.experiment_args.subset_rows_method,
+            y_equalizer=self.experiment_args.y_equalizer,
             cat_dims=self.dataset.cat_dims,
             num_classes=self.dataset.num_classes,
         )

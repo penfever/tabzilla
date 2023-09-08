@@ -6,13 +6,55 @@ from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import OneHotEncoder, QuantileTransformer
 from sklearn.feature_selection import SelectKBest, mutual_info_classif
 
+class CoresetSampler:
+    def __init__(self, number_of_set_points, number_of_starting_points):
+        self.number_of_set_points = number_of_set_points
+        self.number_of_starting_points = number_of_starting_points
+
+    def _compute_batchwise_differences(self, a, b):
+        return np.sum((a[:, None] - b) ** 2, axis=-1)
+
+    def _compute_greedy_coreset_indices(self, features):
+        number_of_starting_points = np.clip(
+            self.number_of_starting_points, None, len(features)
+        )
+        start_points = np.random.choice(
+            len(features), number_of_starting_points, replace=False
+        ).tolist()
+
+        approximate_distance_matrix = self._compute_batchwise_differences(
+            features, features[start_points]
+        )
+        approximate_coreset_anchor_distances = np.mean(
+            approximate_distance_matrix, axis=-1
+        ).reshape(-1, 1)
+        coreset_indices = []
+        num_coreset_samples = self.number_of_set_points
+
+        for _ in tqdm.tqdm(range(num_coreset_samples), desc="Subsampling..."):
+            select_idx = np.argmax(approximate_coreset_anchor_distances)
+            coreset_indices.append(select_idx)
+            coreset_select_distance = self._compute_batchwise_differences(
+                features, features[select_idx : select_idx + 1]
+            )
+            approximate_coreset_anchor_distances = np.concatenate(
+                [approximate_coreset_anchor_distances, coreset_select_distance],
+                axis=-1,
+            )
+            approximate_coreset_anchor_distances = np.min(
+                approximate_coreset_anchor_distances, axis=1
+            ).reshape(-1, 1)
+
+        return np.array(coreset_indices)
+
 class SubsetMaker(object):
 
-    def __init__(self, subset_features, subset_rows, subset_features_method, subset_rows_method):
+    def __init__(self, subset_features, subset_rows, subset_features_method, subset_rows_method, y_equalizer):
         self.subset_features = subset_features
         self.subset_rows = subset_rows
         self.subset_features_method = subset_features_method
         self.subset_rows_method = subset_rows_method
+        self.y_equalizer = y_equalizer
         self.row_selector = None
         self.feature_selector = None
 
@@ -57,11 +99,73 @@ class SubsetMaker(object):
             X = self.feature_selector.transform(X)
             return X, y
 
+    def K_means_sketch(self, X, k, fit_first_only=False):
+        # This function returns the indices of the k samples that are the closest to the k-means centroids
+        import faiss
+        X = np.ascontiguousarray(X, dtype=np.float32)
+        if fit_first_only and getattr(self, 'kmeans', None) is None:
+            print("Fitting kmeans sketch  ...")
+            #start the timer
+            timer = time.time()
+            self.kmeans = faiss.Kmeans(X.shape[1], k, niter=15, verbose=False)
+            self.kmeans.train(X)
+            print(f"Done fitting in {round(time.time() - timer, 1)} seconds")
+        elif fit_first_only and getattr(self, 'kmeans', None) is not None:
+            pass
+        else:
+            self.kmeans = faiss.Kmeans(X.shape[1], k, niter=15, verbose=False)
+            self.kmeans.train(X)
+        cluster_centers = self.kmeans.centroids
+        index = faiss.IndexFlatL2(X.shape[1])
+        index.add(cluster_centers)
+        _, indices = index.search(cluster_centers, 1)
+        return indices.reshape(-1)
+
+    def coreset_sketch(self, X, k):
+        # This function returns the indices of the k samples that are a greedy coreset
+        number_of_set_points = k  # Number of set points for the greedy coreset
+        number_of_starting_points = 5  # Number of starting points for the greedy coreset
+
+        sampler = CoresetSampler(number_of_set_points, number_of_starting_points)
+        indices = sampler._compute_greedy_coreset_indices(X)
+        return indices
+
+
+    def closest_sketch(self, X, k, X_val):
+        # This function returns the indices of the k samples that are the closest to the samples in X_val
+        # Using faiss
+        import faiss
+        X = np.ascontiguousarray(X, dtype=np.float32)
+        X_val = np.ascontiguousarray(X_val, dtype=np.float32)
+        index = faiss.IndexFlatL2(X.shape[1])
+        index.add(X)
+        X_val_reshaped = X_val.reshape(1, -1).astype(np.float32)
+        _, indices = index.search(X_val_reshaped, k)
+        return indices.reshape(-1)
+
+    def sketch(self, X, y, sketch_size, X_val=None):
+        if self.subset_rows_method == "random":
+            indices = np.random.choice(X.shape[0], sketch_size, replace=False)
+        elif self.subset_rows_method == "first":
+            indices = np.arange(sketch_size)
+        elif self.subset_rows_method == "kmeans":
+            indices = self.K_means_sketch(X, sketch_size)
+        elif self.subset_rows_method == "coreset":
+            indices = self.coreset_sketch(X, sketch_size)
+        elif self.subset_rows_method == "closest":
+            indices = self.closest_sketch(X, sketch_size, X_val)
+        else:
+            raise NotImplementedError("Sketch type not implemented")
+
+        return indices
+    
     def make_subset(
         self,
         X,
         y,
+        X_val=None,
         split='train',
+        num_classes=None,
     ):
         """
         Make a subset of the data matrix X, with subset_features features and subset_rows rows.
@@ -83,14 +187,47 @@ class SubsetMaker(object):
                 X, y = self.mutual_information_subset(X, y, action='features', split=split)
             else:
                 raise ValueError(f"subset_features_method not recognized: {self.subset_features_method}")
-        if X.shape[0] > self.subset_rows > 0:
+        if X.shape[0] > self.subset_rows > 0 and split == 'train':
             print(f"making {self.subset_rows}-sized subset of {X.shape[0]} rows ...")
-            if self.subset_rows_method == "random":
-                X, y = self.random_subset(X, y, action=['rows'])
-            elif self.subset_rows_method == "first":
-                X, y = self.first_subset(X, y, action=['rows'])
+            if self.y_equalizer == "none":
+                indices = self.sketch(X, y, self.subset_rows, X_val=X_val)
             else:
-                raise ValueError(f"subset_rows_method not recognized: {self.subset_rows_method}")
+                # Fix for how TabZilla handles binary
+                if num_classes == 1:
+                    num_classes = 2
+                y_vals = np.arange(num_classes)
+                print("num classes in dataset: ", num_classes)
+                indices = []
+                for i in range(len(y_vals)):
+                    relevant_indices = np.where(y == y_vals[i])[0]
+                    if len(relevant_indices) == 0:
+                        continue
+                    # if i == len(y_vals) - 1:
+                    #     samples_per_index = self.subset_rows - len(indices)
+                    # else:
+                    if self.y_equalizer == "equal":
+                        equal_size = int(self.subset_rows / len(y_vals))
+                        if equal_size > len(relevant_indices):
+                            print("Warning: can't get equal-sized subset of each class. Instead using all available samples from this class")
+                            samples_per_index = len(relevant_indices)
+                        else:
+                            samples_per_index = equal_size
+                    elif self.y_equalizer == "proportion":
+                        y_val_proportion = len(relevant_indices) / len(y)
+                        # print("int(np.ceil(self.subset_rows*y_val_proportion))", int(np.ceil(self.subset_rows*y_val_proportion)))
+                        samples_per_index = min(int(np.ceil(self.subset_rows*y_val_proportion)) + 1, len(relevant_indices))
+                    else:
+                        raise ValueError(f"y_equalizer not recognized: {self.y_equalizer}")
+
+                    print(f"Taking {samples_per_index} samples from class {i}")
+                    # print("len(relevant_indices)", len(relevant_indices))
+                    indices_per_index = self.sketch(X[relevant_indices], y[relevant_indices], samples_per_index, X_val=X_val)
+
+                    indices.extend(relevant_indices[indices_per_index[:len(relevant_indices)]])
+            X, y = X[indices], y[indices]
+            # print(f"shape(X) = {X.shape}")
+            # print(f"shape(y) = {y.shape}")
+            # print(f"number of classes = {len(np.unique(y))}")
 
         return X, y
 
@@ -190,22 +327,28 @@ def process_data(
     if (args.subset_features > 0 or args.subset_rows > 0) and (args.subset_features < args.num_features or args.subset_rows < len(X_train)):
         print(f"making subset with {args.subset_features} features and {args.subset_rows} rows...")
         if getattr(dataset, 'ssm', None) is None:
-            dataset.ssm = SubsetMaker(args.subset_features, args.subset_rows, args.subset_features_method, args.subset_rows_method)
+            dataset.ssm = SubsetMaker(args.subset_features, args.subset_rows, args.subset_features_method, args.subset_rows_method, args.y_equalizer)
         X_train, y_train = dataset.ssm.make_subset(
             X_train,
             y_train,
+            X_val,
             split='train',
+            num_classes=dataset.num_classes,
         )
         if args.subset_features < args.num_features:
             X_val, y_val = dataset.ssm.make_subset(
                 X_val,
                 y_val,
+                None,
                 split='val',
+                num_classes=dataset.num_classes,
             )
             X_test, y_test = dataset.ssm.make_subset(
                 X_test,
                 y_test,
+                None,
                 split='test',
+                num_classes=dataset.num_classes,
             )
         print("subset created")
 
