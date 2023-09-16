@@ -16,6 +16,8 @@ from tabzilla_datasets import TabularDataset
 from utils.scorer import BinScorer, ClassScorer, RegScorer
 from utils.timer import Timer
 
+import scipy.stats as stats
+
 class NpEncoder(json.JSONEncoder):
     def default(self, obj):
         if isinstance(obj, np.integer):
@@ -217,7 +219,7 @@ def cross_validation(model: BaseModel, dataset: TabularDataset, time_limit: int,
         val_index = split_dictionary["val"]
         test_index = split_dictionary["test"]
 
-        # run pre-processing & split data
+        # run pre-processing & split data (list of numpy arrays of length num_ensembles)
         processed_data = process_data(
             dataset,
             train_index,
@@ -231,64 +233,86 @@ def cross_validation(model: BaseModel, dataset: TabularDataset, time_limit: int,
         X_train, y_train = processed_data["data_train"]
         X_val, y_val = processed_data["data_val"]
         X_test, y_test = processed_data["data_test"]
-        # Create a new unfitted version of the model
-        curr_model = model.clone()
+        
+        train_predictions_list = []
+        train_probs_list = []
+        val_predictions_list = []
+        val_probs_list = []
+        test_predictions_list = []
+        test_probs_list = []
 
-        # Train model
-        timers["train"].start()
-        # loss history can be saved if needed
-        print("Fitting model, iteration ", i, " of ", len(dataset.split_indeces))
-        loss_history, val_loss_history = curr_model.fit(
-            X_train,
-            y_train,
-            X_val,
-            y_val,
-        )
-        print("Done fitting model, history is: ", loss_history, val_loss_history)
-        timers["train"].end()
+        for j in range(args.num_ensembles):
+            print("Ensemble iteration ", j+1, " of ", args.num_ensembles)
+            # Create a new unfitted version of the model
+            curr_model = model.clone()
 
-        # evaluate on train set
-        timers["train-eval"].start()
-        train_predictions, train_probs = curr_model.predict_wrapper(X_train, args.subset_rows)
-        timers["train-eval"].end()
-        print("Train eval done")
-        # evaluate on val set
-        timers["val"].start()
-        val_predictions, val_probs = curr_model.predict_wrapper(X_val, args.subset_rows)
-        timers["val"].end()
-        print("Val eval done")
-        # evaluate on test set
-        timers["test"].start()
-        test_predictions, test_probs = curr_model.predict_wrapper(X_test, args.subset_rows)
-        timers["test"].end()
-        print("Test eval done")
-        extra_scorer_args = {}
-        if dataset.target_type == "classification":
-            extra_scorer_args["labels"] = range(dataset.num_classes)
+            # Train model
+            timers["train"].start()
+            # loss history can be saved if needed
+            print("Fitting model, iteration ", i, " of ", len(dataset.split_indeces))
+            loss_history, val_loss_history = curr_model.fit(
+                X_train[j],
+                y_train[j],
+                X_val[j],
+                y_val[j],
+            )
+            print("Done fitting model, history is: ", loss_history, val_loss_history)
+            timers["train"].end()
 
+            # evaluate on train set
+            timers["train-eval"].start()
+            train_predictions, train_probs = curr_model.predict_wrapper(X_train[j], args.subset_rows)
+            train_predictions_list.append(train_predictions)
+            train_probs_list.append(train_probs)
+            timers["train-eval"].end()
+            print("Train eval done")
+            # evaluate on val set
+            timers["val"].start()
+            val_predictions, val_probs = curr_model.predict_wrapper(X_val[j], args.subset_rows)
+            val_predictions_list.append(val_predictions)
+            val_probs_list.append(val_probs)
+            timers["val"].end()
+            print("Val eval done")
+            # evaluate on test set
+            timers["test"].start()
+            test_predictions, test_probs = curr_model.predict_wrapper(X_test[j], args.subset_rows)
+            test_predictions_list.append(test_predictions)
+            test_probs_list.append(test_probs)
+            timers["test"].end()
+            print("Test eval done")
+            extra_scorer_args = {}
+            if dataset.target_type == "classification":
+                extra_scorer_args["labels"] = range(dataset.num_classes)
+        # Get majority vote
+        train_predictions = stats.mode(np.array(train_predictions_list), axis=0).mode.reshape(-1)
+        train_probs = np.mean(np.array(train_probs_list), axis=0)
+        val_predictions = stats.mode(np.array(val_predictions_list), axis=0).mode.reshape(-1)
+        val_probs = np.mean(np.array(val_probs_list), axis=0)
+        test_predictions = stats.mode(np.array(test_predictions_list), axis=0).mode.reshape(-1)
+        test_probs = np.mean(np.array(test_probs_list), axis=0)
         # evaluate on train, val, and test sets
         scorers["train"].eval(
-            y_train, train_predictions, train_probs, **extra_scorer_args
+            y_train[j], train_predictions, train_probs, **extra_scorer_args
         )
-        scorers["val"].eval(y_val, val_predictions, val_probs, **extra_scorer_args)
-        scorers["test"].eval(y_test, test_predictions, test_probs, **extra_scorer_args)
+        scorers["val"].eval(y_val[j], val_predictions, val_probs, **extra_scorer_args)
+        scorers["test"].eval(y_test[j], test_predictions, test_probs, **extra_scorer_args)
 
         # store predictions & ground truth
 
         # train
         predictions["train"].append(train_predictions.tolist())
         probabilities["train"].append(train_probs.tolist())
-        ground_truth["train"].append(y_train.tolist())
+        ground_truth["train"].append(y_train[j].tolist())
 
         # val
         predictions["val"].append(val_predictions.tolist())
         probabilities["val"].append(val_probs.tolist())
-        ground_truth["val"].append(y_val.tolist())
+        ground_truth["val"].append(y_val[j].tolist())
 
         # test
         predictions["test"].append(test_predictions.tolist())
         probabilities["test"].append(test_probs.tolist())
-        ground_truth["test"].append(y_test.tolist())
+        ground_truth["test"].append(y_test[j].tolist())
         print("Sample accuracy scores from test set splits: ", scorers["test"].accs)
 
     return ExperimentResult(
@@ -465,5 +489,11 @@ def get_experiment_parser():
         choices=["none", "equal", "proportion"],
         default="none",
         help="Method for equalizing the number of samples in each class. 'none' means do nothing, 'equal' means equalize the number of samples in each class, 'proportion' means equalize the proportion of samples in each class.",
+    )
+    experiment_parser.add(
+        "--num_ensembles",
+        type=int,
+        default=1,
+        help="How many times to train the model. The model will be trained from scratch each time.",
     )
     return experiment_parser

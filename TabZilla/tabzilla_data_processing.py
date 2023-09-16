@@ -7,9 +7,10 @@ from sklearn.preprocessing import OneHotEncoder, QuantileTransformer
 from sklearn.feature_selection import SelectKBest, mutual_info_classif
 
 class CoresetSampler:
-    def __init__(self, number_of_set_points, number_of_starting_points):
+    def __init__(self, number_of_set_points, number_of_starting_points, rand_seed):
         self.number_of_set_points = number_of_set_points
         self.number_of_starting_points = number_of_starting_points
+        self.rng = np.random.default_rng(rand_seed)
 
     def _compute_batchwise_differences(self, a, b):
         return np.sum((a[:, None] - b) ** 2, axis=-1)
@@ -18,10 +19,7 @@ class CoresetSampler:
         number_of_starting_points = np.clip(
             self.number_of_starting_points, None, len(features)
         )
-        start_points = np.random.choice(
-            len(features), number_of_starting_points, replace=False
-        ).tolist()
-
+        start_points = self.rng.choice(len(features), number_of_starting_points, replace=False).tolist()
         approximate_distance_matrix = self._compute_batchwise_differences(
             features, features[start_points]
         )
@@ -31,7 +29,7 @@ class CoresetSampler:
         coreset_indices = []
         num_coreset_samples = self.number_of_set_points
 
-        for _ in tqdm.tqdm(range(num_coreset_samples), desc="Subsampling..."):
+        for _ in range(num_coreset_samples):
             select_idx = np.argmax(approximate_coreset_anchor_distances)
             coreset_indices.append(select_idx)
             coreset_select_distance = self._compute_batchwise_differences(
@@ -57,14 +55,17 @@ class SubsetMaker(object):
         self.y_equalizer = y_equalizer
         self.row_selector = None
         self.feature_selector = None
+        self.seeds_seen = set()
 
-    def random_subset(self, X, y, action=[]):
+    def random_subset(self, X, y, action=[], rand_seed=0):
+        print("Random seed: ", rand_seed)
+        rng = np.random.default_rng(rand_seed)
         if 'rows' in action:
-            row_indices = np.random.choice(X.shape[0], self.subset_rows, replace=False)
+            row_indices = rng.choice(X.shape[0], self.subset_rows, replace=False)
         else:
             row_indices = np.arange(X.shape[0])
         if 'features' in action:
-            feature_indices = np.random.choice(X.shape[1], self.subset_features, replace=False)
+            feature_indices = rng.choice(X.shape[1], self.subset_features, replace=False)
         else:
             feature_indices = np.arange(X.shape[1])
         return X[row_indices[:, None], feature_indices], y[row_indices]
@@ -99,7 +100,8 @@ class SubsetMaker(object):
             X = self.feature_selector.transform(X)
             return X, y
 
-    def K_means_sketch(self, X, k, fit_first_only=False):
+    def K_means_sketch(self, X, k, fit_first_only=False, rand_seed=0):
+        print("Random seed: ", rand_seed)
         # This function returns the indices of the k samples that are the closest to the k-means centroids
         import faiss
         X = np.ascontiguousarray(X, dtype=np.float32)
@@ -118,20 +120,25 @@ class SubsetMaker(object):
         cluster_centers = self.kmeans.centroids
         index = faiss.IndexFlatL2(X.shape[1])
         index.add(cluster_centers)
-        _, indices = index.search(cluster_centers, 1)
-        return indices.reshape(-1)
+        s_val = min(k * rand_seed, index.ntotal)
+        _, indices = index.search(cluster_centers, s_val)
+        assert rand_seed > 0, "Random seed for closest sketch must be greater than 0"
+        if rand_seed == 1 or (rand_seed-1)*k > len(indices) - k - 1:
+            return indices.reshape(-1)
+        else:
+            return indices[:, (rand_seed-1)*k:].reshape(-1)
 
-    def coreset_sketch(self, X, k):
+    def coreset_sketch(self, X, k, rand_seed=0):
         # This function returns the indices of the k samples that are a greedy coreset
         number_of_set_points = k  # Number of set points for the greedy coreset
         number_of_starting_points = 5  # Number of starting points for the greedy coreset
 
-        sampler = CoresetSampler(number_of_set_points, number_of_starting_points)
+        sampler = CoresetSampler(number_of_set_points, number_of_starting_points, rand_seed)
         indices = sampler._compute_greedy_coreset_indices(X)
         return indices
 
 
-    def closest_sketch(self, X, k, X_val):
+    def closest_sketch(self, X, k, X_val, rand_seed=1):
         # This function returns the indices of the k samples that are the closest to the samples in X_val
         # Using faiss
         import faiss
@@ -139,21 +146,31 @@ class SubsetMaker(object):
         X_val = np.ascontiguousarray(X_val, dtype=np.float32)
         index = faiss.IndexFlatL2(X.shape[1])
         index.add(X)
-        X_val_reshaped = X_val.reshape(1, -1).astype(np.float32)
-        _, indices = index.search(X_val_reshaped, k)
-        return indices.reshape(-1)
+        target_size = min(k * rand_seed, X_val.shape[0])
+        try:
+            X_val_reshaped = X_val.reshape(1, -1).astype(np.float32)
+            _, indices = index.search(X_val_reshaped, target_size)
+        except:
+            _, indices = index.search(X_val, target_size)
+        assert rand_seed > 0, "Random seed for closest sketch must be greater than 0"
+        if rand_seed == 1:
+            return indices.reshape(-1)
+        else:
+            return indices[:, (rand_seed-1)*k:].reshape(-1)
 
-    def sketch(self, X, y, sketch_size, X_val=None):
+    def sketch(self, X, y, sketch_size, X_val=None, rand_seed=0):
+        self.seeds_seen.add(rand_seed)
         if self.subset_rows_method == "random":
-            indices = np.random.choice(X.shape[0], sketch_size, replace=False)
+            rng = np.random.default_rng(rand_seed)
+            indices = rng.choice(X.shape[0], sketch_size, replace=False)
         elif self.subset_rows_method == "first":
             indices = np.arange(sketch_size)
         elif self.subset_rows_method == "kmeans":
-            indices = self.K_means_sketch(X, sketch_size)
+            indices = self.K_means_sketch(X, sketch_size, fit_first_only=False, rand_seed=len(self.seeds_seen))
         elif self.subset_rows_method == "coreset":
-            indices = self.coreset_sketch(X, sketch_size)
+            indices = self.coreset_sketch(X, sketch_size, rand_seed=rand_seed)
         elif self.subset_rows_method == "closest":
-            indices = self.closest_sketch(X, sketch_size, X_val)
+            indices = self.closest_sketch(X, sketch_size, X_val, rand_seed=len(self.seeds_seen))
         else:
             raise NotImplementedError("Sketch type not implemented")
 
@@ -166,6 +183,8 @@ class SubsetMaker(object):
         X_val=None,
         split='train',
         num_classes=None,
+        rand_seed=0,
+        action=['features', 'rows'],
     ):
         """
         Make a subset of the data matrix X, with subset_features features and subset_rows rows.
@@ -177,20 +196,20 @@ class SubsetMaker(object):
         :param subset_rows_method: method to use for selecting rows
         :return: subset of X, y
         """
-        if X.shape[1] > self.subset_features > 0:
+        if 'features' in action:
             print(f"making {self.subset_features}-sized subset of {X.shape[1]} features ...")
             if self.subset_features_method == "random":
-                X, y = self.random_subset(X, y, action=['features'])
+                X, y = self.random_subset(X, y, action=['features'], rand_seed=rand_seed)
             elif self.subset_features_method == "first":
                 X, y = self.first_subset(X, y, action=['features'])
             elif self.subset_features_method == "mutual_information":
                 X, y = self.mutual_information_subset(X, y, action='features', split=split)
             else:
                 raise ValueError(f"subset_features_method not recognized: {self.subset_features_method}")
-        if X.shape[0] > self.subset_rows > 0 and split == 'train':
+        if 'rows' in action:
             print(f"making {self.subset_rows}-sized subset of {X.shape[0]} rows ...")
             if self.y_equalizer == "none":
-                indices = self.sketch(X, y, self.subset_rows, X_val=X_val)
+                indices = self.sketch(X, y, self.subset_rows, X_val=X_val, rand_seed=rand_seed)
             else:
                 # Fix for how TabZilla handles binary
                 if num_classes == 1:
@@ -221,7 +240,7 @@ class SubsetMaker(object):
 
                     print(f"Taking {samples_per_index} samples from class {i}")
                     # print("len(relevant_indices)", len(relevant_indices))
-                    indices_per_index = self.sketch(X[relevant_indices], y[relevant_indices], samples_per_index, X_val=X_val)
+                    indices_per_index = self.sketch(X[relevant_indices], y[relevant_indices], samples_per_index, X_val=X_val, rand_seed=rand_seed)
 
                     indices.extend(relevant_indices[indices_per_index[:len(relevant_indices)]])
             X, y = X[indices], y[indices]
@@ -325,36 +344,71 @@ def process_data(
 
     # create subset of dataset if needed
     if (args.subset_features > 0 or args.subset_rows > 0) and (args.subset_features < args.num_features or args.subset_rows < len(X_train)):
-        print(f"making subset with {args.subset_features} features and {args.subset_rows} rows...")
         if getattr(dataset, 'ssm', None) is None:
             dataset.ssm = SubsetMaker(args.subset_features, args.subset_rows, args.subset_features_method, args.subset_rows_method, args.y_equalizer)
-        X_train, y_train = dataset.ssm.make_subset(
-            X_train,
-            y_train,
-            X_val,
-            split='train',
-            num_classes=dataset.num_classes,
-        )
-        if args.subset_features < args.num_features:
-            X_val, y_val = dataset.ssm.make_subset(
+        X_train_l = []
+        y_train_l = []
+        X_val_l = []
+        y_val_l = []
+        X_test_l = []
+        y_test_l = []
+        if 0 < args.subset_features < args.num_features:
+            X_train_t, y_train_t = dataset.ssm.make_subset(
+                X_train,
+                y_train,
+                X_val,
+                split='train',
+                num_classes=dataset.num_classes,
+                rand_seed=args.hparam_seed,
+                action=['features'],
+            )
+            X_val_t, y_val_t = dataset.ssm.make_subset(
                 X_val,
                 y_val,
                 None,
                 split='val',
                 num_classes=dataset.num_classes,
+                rand_seed=args.hparam_seed,
+                action=['features'],
             )
-            X_test, y_test = dataset.ssm.make_subset(
+            X_test_t, y_test_t = dataset.ssm.make_subset(
                 X_test,
                 y_test,
                 None,
                 split='test',
                 num_classes=dataset.num_classes,
+                rand_seed=args.hparam_seed,
+                action=['features'],
             )
-        print("subset created")
+        if 0 < args.subset_rows < len(X_train):
+            for j in range(args.num_ensembles):
+                print(f"making subset {j} with {args.subset_features} features and {args.subset_rows} rows...")
+                X_train_t, y_train_t = dataset.ssm.make_subset(
+                    X_train,
+                    y_train,
+                    X_val,
+                    split='train',
+                    num_classes=dataset.num_classes,
+                    rand_seed=args.hparam_seed + j,
+                    action=['rows'],
+                )
+                X_train_l.append(X_train_t)
+                y_train_l.append(y_train_t)
+                X_val_l.append(X_val)
+                y_val_l.append(y_val)
+                X_test_l.append(X_test)
+                y_test_l.append(y_test)
+        else:
+            X_train_l = [X_train]*args.num_ensembles
+            y_train_l = [y_train]*args.num_ensembles
+        X_val_l = [X_val]*args.num_ensembles
+        y_val_l = [y_val]*args.num_ensembles
+        X_test_l = [X_test]*args.num_ensembles
+        y_test_l = [y_test]*args.num_ensembles
 
     return {
         "args" : args,
-        "data_train": (X_train, y_train),
-        "data_val": (X_val, y_val),
-        "data_test": (X_test, y_test),
+        "data_train": (X_train_l, y_train_l),
+        "data_val": (X_val_l, y_val_l),
+        "data_test": (X_test_l, y_test_l),
     }

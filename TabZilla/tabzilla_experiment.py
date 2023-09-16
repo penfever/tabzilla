@@ -110,6 +110,8 @@ class TabZillaObjective(object):
                 "num_classes",
                 "logging_period",
                 "y_equalizer",
+                "num_ensembles",
+                "hparam_seed",
             ],
         )
 
@@ -141,6 +143,8 @@ class TabZillaObjective(object):
             y_equalizer=self.experiment_args.y_equalizer,
             cat_dims=self.dataset.cat_dims,
             num_classes=self.dataset.num_classes,
+            num_ensembles=self.experiment_args.num_ensembles,
+            hparam_seed=self.hparam_seed,
         )
 
         # parameterized model
