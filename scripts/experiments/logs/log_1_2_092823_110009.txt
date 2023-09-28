@@ -1699,3 +1699,8 @@ Job id is 38212311
 ++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
           38212311 tandon_a1 run_tabz    bf996  R    4:33:48      1 ga019 ]]
 ++ sleep 60
+++ true
++++ squeue -j 38212311
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          38212311 tandon_a1 run_tabz    bf996  R    4:34:48      1 ga019 ]]
+++ sleep 60
