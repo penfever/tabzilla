@@ -112,11 +112,10 @@ class SubsetMaker(object):
         index.add(cluster_centers)
         s_val = min(k * rand_seed, index.ntotal)
         _, indices = index.search(cluster_centers, s_val)
-        assert rand_seed > 0, "Random seed for closest sketch must be greater than 0"
-        if rand_seed == 1 or (rand_seed-1)*k > len(indices) - k - 1:
-            return indices.reshape(-1)
+        if rand_seed == 1:
+            return indices[:k, :].reshape(-1)
         else:
-            return indices[:, (rand_seed-1)*k:].reshape(-1)
+            return indices[(rand_seed-1)*k:((rand_seed-1)*k)+k, :].reshape(-1)
 
     def coreset_sketch(self, X, k, rand_seed=0):
         # This function returns the indices of the k samples that are a greedy coreset
