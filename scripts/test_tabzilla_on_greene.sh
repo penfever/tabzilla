@@ -13,10 +13,10 @@ cd /scratch/bf996/tabzilla/TabZilla
 ENV_NAME=gbdt
 
 # name of the model/algorithm
-MODEL_NAME=XGBoost
+MODEL_NAME=CatBoost
 
 # name of the dataset
-DATASET_NAME=/openml__APSFailure__168868
+DATASET_NAME=/openml__robert__168332
 
 # name of the config file to use
 #CONFIG_FILE=tabzilla_experiment_config.yml

@@ -1,0 +1,2914 @@
+++ model_name=TabPFNModel
+++ dataset_name=openml__riccardo__168338
+++ env_name=torch
+++ instance_name=algs-catboost-tabpfn-large-1-4
+++ experiment_name=algs-catboost-tabpfn-large
+++ config_file=/scratch/bf996/tabzilla/TabZilla/tabzilla_experiment_config_gpu_mod_1_4.yml
+++ echo 'run_experiment: model_name: TabPFNModel'
+run_experiment: model_name: TabPFNModel
+++ echo 'run_experiment: dataset_name: openml__riccardo__168338'
+run_experiment: dataset_name: openml__riccardo__168338
+++ echo 'run_experiment: env_name: torch'
+run_experiment: env_name: torch
+++ echo 'run_experiment: instance_name: algs-catboost-tabpfn-large-1-4'
+run_experiment: instance_name: algs-catboost-tabpfn-large-1-4
+++ echo 'run_experiment: experiment_name: algs-catboost-tabpfn-large'
+run_experiment: experiment_name: algs-catboost-tabpfn-large
+++ echo 'run_experiment: config_file: /scratch/bf996/tabzilla/TabZilla/tabzilla_experiment_config_gpu_mod_1_4.yml'
+run_experiment: config_file: /scratch/bf996/tabzilla/TabZilla/tabzilla_experiment_config_gpu_mod_1_4.yml
+++ [[ -z /scratch/bf996/tabzilla/TabZilla/tabzilla_experiment_config_gpu_mod_1_4.yml ]]
+++ MAX_TRIES=1
+++ echo 'launching instance algs-catboost-tabpfn-large-1-4...'
+launching instance algs-catboost-tabpfn-large-1-4...
+++ COUNT=1
+++ '[' 1 -le 1 ']'
++++ sbatch /scratch/bf996/tabzilla/scripts/batch/tabzilla_batch_mod.sbatch
++++ awk '{print $4}'
+++ job1=37507598
+++ echo 'Executing job TabPFNModel openml__riccardo__168338'
+Executing job TabPFNModel openml__riccardo__168338
+++ echo 'Job id is 37507598'
+Job id is 37507598
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R       0:31      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R       1:31      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R       2:31      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R       3:31      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R       4:33      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R       5:33      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R       6:33      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R       7:34      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R       8:34      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R       9:34      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R      10:34      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R      11:34      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R      12:34      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R      13:34      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R      14:34      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R      15:34      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R      16:34      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R      17:34      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R      18:34      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R      19:34      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R      20:35      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R      21:35      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R      22:35      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R      23:35      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R      24:37      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R      25:37      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R      26:37      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R      27:37      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R      28:37      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R      29:40      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R      30:40      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R      31:40      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R      32:40      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R      33:40      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R      34:42      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R      35:42      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R      36:42      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R      37:42      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R      38:42      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R      39:42      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R      40:42      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R      41:42      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R      42:42      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R      43:42      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R      44:42      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R      45:42      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R      46:43      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R      47:43      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R      48:43      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R      49:43      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R      50:43      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R      51:44      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R      52:44      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R      53:44      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R      54:44      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R      55:44      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R      56:44      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R      57:46      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R      58:46      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R      59:46      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R    1:00:47      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R    1:01:47      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R    1:02:47      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R    1:03:49      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R    1:04:49      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R    1:05:49      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R    1:06:49      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R    1:07:49      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R    1:08:51      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R    1:09:51      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R    1:10:51      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R    1:11:53      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R    1:12:55      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R    1:13:55      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R    1:14:55      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R    1:15:55      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R    1:16:55      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R    1:17:56      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R    1:18:56      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R    1:19:56      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R    1:20:56      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R    1:22:00      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R    1:23:00      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R    1:24:00      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R    1:25:00      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R    1:26:00      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R    1:27:00      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R    1:28:00      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37507598 gpu_misc_ run_tabz    bf996  R    1:29:00      1 gv014 ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON) ]]
+++ sleep 60
+++ true
++++ squeue -j 37507598
+slurm_load_jobs error: Invalid job id specified
+++ [[ -z '' ]]
+++ echo 'Job 37507598 has finished.'
+Job 37507598 has finished.
++++ sacct -j 37507598 --format=JobID,ExitCode
+++ sacct_output='JobID        ExitCode 
+------------ -------- 
+37507598          0:0 
+37507598.ba+      0:0 
+37507598.ex+      0:0 
+37507598.0        0:0 '
+++ declare -i INSTANCE_RETURN_CODE
++++ echo 'JobID        ExitCode 
+------------ -------- 
+37507598          0:0 
+37507598.ba+      0:0 
+37507598.ex+      0:0 
+37507598.0        0:0 '
++++ cut -d: -f1
++++ awk '{print $2}'
++++ grep '^37507598'
+++ INSTANCE_RETURN_CODE='0
+0
+0
+0'
+../utils.sh: line 181: 0
+0
+0
+0: syntax error in expression (error token is "0
+0
+0")

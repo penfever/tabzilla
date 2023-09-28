@@ -1,0 +1,444 @@
+++ model_name=CatBoost
+++ dataset_name=openml__Fashion-MNIST__146825
+++ env_name=gbdt
+++ instance_name=algs-catboost-tabpfn-large-0-3
+++ experiment_name=algs-catboost-tabpfn-large
+++ config_file=/scratch/bf996/tabzilla/TabZilla/tabzilla_experiment_config_gpu_mod_0_3.yml
+++ echo 'run_experiment: model_name: CatBoost'
+run_experiment: model_name: CatBoost
+++ echo 'run_experiment: dataset_name: openml__Fashion-MNIST__146825'
+run_experiment: dataset_name: openml__Fashion-MNIST__146825
+++ echo 'run_experiment: env_name: gbdt'
+run_experiment: env_name: gbdt
+++ echo 'run_experiment: instance_name: algs-catboost-tabpfn-large-0-3'
+run_experiment: instance_name: algs-catboost-tabpfn-large-0-3
+++ echo 'run_experiment: experiment_name: algs-catboost-tabpfn-large'
+run_experiment: experiment_name: algs-catboost-tabpfn-large
+++ echo 'run_experiment: config_file: /scratch/bf996/tabzilla/TabZilla/tabzilla_experiment_config_gpu_mod_0_3.yml'
+run_experiment: config_file: /scratch/bf996/tabzilla/TabZilla/tabzilla_experiment_config_gpu_mod_0_3.yml
+++ [[ -z /scratch/bf996/tabzilla/TabZilla/tabzilla_experiment_config_gpu_mod_0_3.yml ]]
+++ MAX_TRIES=1
+++ echo 'launching instance algs-catboost-tabpfn-large-0-3...'
+launching instance algs-catboost-tabpfn-large-0-3...
+++ COUNT=1
+++ '[' 1 -le 1 ']'
++++ sbatch /scratch/bf996/tabzilla/scripts/batch/tabzilla_batch_mod.sbatch
++++ awk '{print $4}'
+++ job1=38023580
+++ echo 'Executing job CatBoost openml__Fashion-MNIST__146825'
+Executing job CatBoost openml__Fashion-MNIST__146825
+++ echo 'Job id is 38023580'
+Job id is 38023580
+++ true
++++ squeue -j 38023580
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          38023580 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 38023580
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          38023580   rtx8000 run_tabz    bf996  R       0:16      1 gr033 ]]
+++ sleep 60
+++ true
++++ squeue -j 38023580
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          38023580   rtx8000 run_tabz    bf996  R       1:16      1 gr033 ]]
+++ sleep 60
+++ true
++++ squeue -j 38023580
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          38023580   rtx8000 run_tabz    bf996  R       2:16      1 gr033 ]]
+++ sleep 60
+++ true
++++ squeue -j 38023580
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          38023580   rtx8000 run_tabz    bf996  R       3:16      1 gr033 ]]
+++ sleep 60
+++ true
++++ squeue -j 38023580
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          38023580   rtx8000 run_tabz    bf996  R       4:16      1 gr033 ]]
+++ sleep 60
+++ true
++++ squeue -j 38023580
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          38023580   rtx8000 run_tabz    bf996  R       5:16      1 gr033 ]]
+++ sleep 60
+++ true
++++ squeue -j 38023580
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          38023580   rtx8000 run_tabz    bf996  R       6:16      1 gr033 ]]
+++ sleep 60
+++ true
++++ squeue -j 38023580
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          38023580   rtx8000 run_tabz    bf996  R       7:16      1 gr033 ]]
+++ sleep 60
+++ true
++++ squeue -j 38023580
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          38023580   rtx8000 run_tabz    bf996  R       8:16      1 gr033 ]]
+++ sleep 60
+++ true
++++ squeue -j 38023580
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          38023580   rtx8000 run_tabz    bf996  R       9:16      1 gr033 ]]
+++ sleep 60
+++ true
++++ squeue -j 38023580
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          38023580   rtx8000 run_tabz    bf996  R      10:16      1 gr033 ]]
+++ sleep 60
+++ true
++++ squeue -j 38023580
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          38023580   rtx8000 run_tabz    bf996  R      11:16      1 gr033 ]]
+++ sleep 60
+++ true
++++ squeue -j 38023580
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          38023580   rtx8000 run_tabz    bf996  R      12:16      1 gr033 ]]
+++ sleep 60
+++ true
++++ squeue -j 38023580
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          38023580   rtx8000 run_tabz    bf996  R      13:16      1 gr033 ]]
+++ sleep 60
+++ true
++++ squeue -j 38023580
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          38023580   rtx8000 run_tabz    bf996  R      14:16      1 gr033 ]]
+++ sleep 60
+++ true
++++ squeue -j 38023580
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          38023580   rtx8000 run_tabz    bf996  R      15:16      1 gr033 ]]
+++ sleep 60
+++ true
++++ squeue -j 38023580
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          38023580   rtx8000 run_tabz    bf996  R      16:16      1 gr033 ]]
+++ sleep 60
+++ true
++++ squeue -j 38023580
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          38023580   rtx8000 run_tabz    bf996  R      17:16      1 gr033 ]]
+++ sleep 60
+++ true
++++ squeue -j 38023580
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          38023580   rtx8000 run_tabz    bf996  R      18:16      1 gr033 ]]
+++ sleep 60
+++ true
++++ squeue -j 38023580
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          38023580   rtx8000 run_tabz    bf996  R      19:16      1 gr033 ]]
+++ sleep 60
+++ true
++++ squeue -j 38023580
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          38023580   rtx8000 run_tabz    bf996  R      20:16      1 gr033 ]]
+++ sleep 60
+++ true
++++ squeue -j 38023580
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          38023580   rtx8000 run_tabz    bf996  R      21:16      1 gr033 ]]
+++ sleep 60
+++ true
++++ squeue -j 38023580
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          38023580   rtx8000 run_tabz    bf996  R      22:16      1 gr033 ]]
+++ sleep 60
+++ true
++++ squeue -j 38023580
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          38023580   rtx8000 run_tabz    bf996  R      23:16      1 gr033 ]]
+++ sleep 60
+++ true
++++ squeue -j 38023580
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          38023580   rtx8000 run_tabz    bf996  R      24:16      1 gr033 ]]
+++ sleep 60
+++ true
++++ squeue -j 38023580
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          38023580   rtx8000 run_tabz    bf996  R      25:16      1 gr033 ]]
+++ sleep 60
+++ true
++++ squeue -j 38023580
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          38023580   rtx8000 run_tabz    bf996  R      26:16      1 gr033 ]]
+++ sleep 60
+++ true
++++ squeue -j 38023580
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          38023580   rtx8000 run_tabz    bf996  R      27:16      1 gr033 ]]
+++ sleep 60
+++ true
++++ squeue -j 38023580
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          38023580   rtx8000 run_tabz    bf996  R      28:16      1 gr033 ]]
+++ sleep 60
+++ true
++++ squeue -j 38023580
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          38023580   rtx8000 run_tabz    bf996  R      29:16      1 gr033 ]]
+++ sleep 60
+++ true
++++ squeue -j 38023580
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          38023580   rtx8000 run_tabz    bf996  R      30:16      1 gr033 ]]
+++ sleep 60
+++ true
++++ squeue -j 38023580
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          38023580   rtx8000 run_tabz    bf996  R      31:16      1 gr033 ]]
+++ sleep 60
+++ true
++++ squeue -j 38023580
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          38023580   rtx8000 run_tabz    bf996  R      32:16      1 gr033 ]]
+++ sleep 60
+++ true
++++ squeue -j 38023580
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          38023580   rtx8000 run_tabz    bf996  R      33:16      1 gr033 ]]
+++ sleep 60
+++ true
++++ squeue -j 38023580
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          38023580   rtx8000 run_tabz    bf996  R      34:16      1 gr033 ]]
+++ sleep 60
+++ true
++++ squeue -j 38023580
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          38023580   rtx8000 run_tabz    bf996  R      35:16      1 gr033 ]]
+++ sleep 60
+++ true
++++ squeue -j 38023580
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          38023580   rtx8000 run_tabz    bf996  R      36:17      1 gr033 ]]
+++ sleep 60
+++ true
++++ squeue -j 38023580
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          38023580   rtx8000 run_tabz    bf996  R      37:17      1 gr033 ]]
+++ sleep 60
+++ true
++++ squeue -j 38023580
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          38023580   rtx8000 run_tabz    bf996  R      38:17      1 gr033 ]]
+++ sleep 60
+++ true
++++ squeue -j 38023580
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          38023580   rtx8000 run_tabz    bf996  R      39:17      1 gr033 ]]
+++ sleep 60
+++ true
++++ squeue -j 38023580
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          38023580   rtx8000 run_tabz    bf996  R      40:17      1 gr033 ]]
+++ sleep 60
+++ true
++++ squeue -j 38023580
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          38023580   rtx8000 run_tabz    bf996  R      41:17      1 gr033 ]]
+++ sleep 60
+++ true
++++ squeue -j 38023580
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          38023580   rtx8000 run_tabz    bf996  R      42:17      1 gr033 ]]
+++ sleep 60
+++ true
++++ squeue -j 38023580
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          38023580   rtx8000 run_tabz    bf996  R      43:17      1 gr033 ]]
+++ sleep 60
+++ true
++++ squeue -j 38023580
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          38023580   rtx8000 run_tabz    bf996  R      44:17      1 gr033 ]]
+++ sleep 60
+++ true
++++ squeue -j 38023580
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          38023580   rtx8000 run_tabz    bf996  R      45:17      1 gr033 ]]
+++ sleep 60
+++ true
++++ squeue -j 38023580
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          38023580   rtx8000 run_tabz    bf996  R      46:17      1 gr033 ]]
+++ sleep 60
+++ true
++++ squeue -j 38023580
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          38023580   rtx8000 run_tabz    bf996  R      47:17      1 gr033 ]]
+++ sleep 60
+++ true
++++ squeue -j 38023580
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          38023580   rtx8000 run_tabz    bf996  R      48:17      1 gr033 ]]
+++ sleep 60
+++ true
++++ squeue -j 38023580
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          38023580   rtx8000 run_tabz    bf996  R      49:17      1 gr033 ]]
+++ sleep 60
+++ true
++++ squeue -j 38023580
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          38023580   rtx8000 run_tabz    bf996  R      50:17      1 gr033 ]]
+++ sleep 60
+++ true
++++ squeue -j 38023580
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          38023580   rtx8000 run_tabz    bf996  R      51:17      1 gr033 ]]
+++ sleep 60
+++ true
++++ squeue -j 38023580
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          38023580   rtx8000 run_tabz    bf996  R      52:17      1 gr033 ]]
+++ sleep 60
+++ true
++++ squeue -j 38023580
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          38023580   rtx8000 run_tabz    bf996  R      53:17      1 gr033 ]]
+++ sleep 60
+++ true
++++ squeue -j 38023580
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          38023580   rtx8000 run_tabz    bf996  R      54:17      1 gr033 ]]
+++ sleep 60
+++ true
++++ squeue -j 38023580
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          38023580   rtx8000 run_tabz    bf996  R      55:17      1 gr033 ]]
+++ sleep 60
+++ true
++++ squeue -j 38023580
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          38023580   rtx8000 run_tabz    bf996  R      56:17      1 gr033 ]]
+++ sleep 60
+++ true
++++ squeue -j 38023580
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          38023580   rtx8000 run_tabz    bf996  R      57:17      1 gr033 ]]
+++ sleep 60
+++ true
++++ squeue -j 38023580
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          38023580   rtx8000 run_tabz    bf996  R      58:17      1 gr033 ]]
+++ sleep 60
+++ true
++++ squeue -j 38023580
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          38023580   rtx8000 run_tabz    bf996  R      59:17      1 gr033 ]]
+++ sleep 60
+++ true
++++ squeue -j 38023580
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          38023580   rtx8000 run_tabz    bf996  R    1:00:17      1 gr033 ]]
+++ sleep 60
+++ true
++++ squeue -j 38023580
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          38023580   rtx8000 run_tabz    bf996  R    1:01:17      1 gr033 ]]
+++ sleep 60
+++ true
++++ squeue -j 38023580
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          38023580   rtx8000 run_tabz    bf996  R    1:02:17      1 gr033 ]]
+++ sleep 60
+++ true
++++ squeue -j 38023580
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          38023580   rtx8000 run_tabz    bf996  R    1:03:17      1 gr033 ]]
+++ sleep 60
+++ true
++++ squeue -j 38023580
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          38023580   rtx8000 run_tabz    bf996  R    1:04:17      1 gr033 ]]
+++ sleep 60
+++ true
++++ squeue -j 38023580
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          38023580   rtx8000 run_tabz    bf996  R    1:05:17      1 gr033 ]]
+++ sleep 60
+++ true
++++ squeue -j 38023580
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          38023580   rtx8000 run_tabz    bf996  R    1:06:17      1 gr033 ]]
+++ sleep 60
+++ true
++++ squeue -j 38023580
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          38023580   rtx8000 run_tabz    bf996  R    1:07:17      1 gr033 ]]
+++ sleep 60
+++ true
++++ squeue -j 38023580
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          38023580   rtx8000 run_tabz    bf996  R    1:08:17      1 gr033 ]]
+++ sleep 60
+++ true
++++ squeue -j 38023580
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          38023580   rtx8000 run_tabz    bf996  R    1:09:17      1 gr033 ]]
+++ sleep 60
+++ true
++++ squeue -j 38023580
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          38023580   rtx8000 run_tabz    bf996  R    1:10:17      1 gr033 ]]
+++ sleep 60
+++ true
++++ squeue -j 38023580
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON) ]]
+++ sleep 60
+++ true
++++ squeue -j 38023580
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON) ]]
+++ sleep 60
+++ true
++++ squeue -j 38023580
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON) ]]
+++ sleep 60
+++ true
++++ squeue -j 38023580
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON) ]]
+++ sleep 60
+++ true
++++ squeue -j 38023580
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON) ]]
+++ sleep 60
+++ true
++++ squeue -j 38023580
+slurm_load_jobs error: Invalid job id specified
+++ [[ -z '' ]]
+++ echo 'Job 38023580 has finished.'
+Job 38023580 has finished.
++++ sacct -j 38023580 --format=JobID,ExitCode
+++ sacct_output='JobID        ExitCode 
+------------ -------- 
+38023580          0:0 
+38023580.ba+      0:0 
+38023580.ex+      0:0 
+38023580.0        0:0 '
+++ declare -i INSTANCE_RETURN_CODE
++++ echo 'JobID        ExitCode 
+------------ -------- 
+38023580          0:0 
+38023580.ba+      0:0 
+38023580.ex+      0:0 
+38023580.0        0:0 '
++++ grep '^38023580'
++++ awk '{print $2}'
++++ cut -d: -f1
+++ INSTANCE_RETURN_CODE='0
+0
+0
+0'
+../utils.sh: line 181: 0
+0
+0
+0: syntax error in expression (error token is "0
+0
+0")

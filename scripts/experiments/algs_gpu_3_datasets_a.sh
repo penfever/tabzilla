@@ -7,12 +7,12 @@ source ../utils.sh
 # begin: EXPERIMENT PARAMETERS
 
 # this defines MODELS_ENVS
-source ../ALGS_GPU_3.sh
+source ../tabpfn_only.sh
 
 # this defines DATASETS
 source ../DATASETS_A.sh
 
-name=algs-gpu-3-datasets-a
+name=algs-tabpfn-only-datasets-a
 
 # base name for the gcloud instances
 instance_base=$name

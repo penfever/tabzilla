@@ -1,0 +1,3249 @@
+++ model_name=TabPFNModel
+++ dataset_name=openml__poker-hand__9890
+++ env_name=torch
+++ instance_name=algs-catboost-tabpfn-large-1-2
+++ experiment_name=algs-catboost-tabpfn-large
+++ config_file=/scratch/bf996/tabzilla/TabZilla/tabzilla_experiment_config_gpu_mod_1_2.yml
+++ echo 'run_experiment: model_name: TabPFNModel'
+run_experiment: model_name: TabPFNModel
+++ echo 'run_experiment: dataset_name: openml__poker-hand__9890'
+run_experiment: dataset_name: openml__poker-hand__9890
+++ echo 'run_experiment: env_name: torch'
+run_experiment: env_name: torch
+++ echo 'run_experiment: instance_name: algs-catboost-tabpfn-large-1-2'
+run_experiment: instance_name: algs-catboost-tabpfn-large-1-2
+++ echo 'run_experiment: experiment_name: algs-catboost-tabpfn-large'
+run_experiment: experiment_name: algs-catboost-tabpfn-large
+++ echo 'run_experiment: config_file: /scratch/bf996/tabzilla/TabZilla/tabzilla_experiment_config_gpu_mod_1_2.yml'
+run_experiment: config_file: /scratch/bf996/tabzilla/TabZilla/tabzilla_experiment_config_gpu_mod_1_2.yml
+++ [[ -z /scratch/bf996/tabzilla/TabZilla/tabzilla_experiment_config_gpu_mod_1_2.yml ]]
+++ MAX_TRIES=1
+++ echo 'launching instance algs-catboost-tabpfn-large-1-2...'
+launching instance algs-catboost-tabpfn-large-1-2...
+++ COUNT=1
+++ '[' 1 -le 1 ']'
++++ sbatch /scratch/bf996/tabzilla/scripts/batch/tabzilla_batch_mod.sbatch
++++ awk '{print $4}'
+++ job1=37546059
+++ echo 'Executing job TabPFNModel openml__poker-hand__9890'
+Executing job TabPFNModel openml__poker-hand__9890
+++ echo 'Job id is 37546059'
+Job id is 37546059
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R       0:33      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R       1:33      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R       2:36      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R       3:36      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R       4:36      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R       5:36      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R       6:36      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R       7:36      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R       8:36      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R       9:39      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R      10:39      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R      11:39      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R      12:39      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R      13:39      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R      14:39      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R      15:39      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R      16:39      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R      17:39      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R      18:39      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R      19:39      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R      20:39      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R      21:39      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R      22:39      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R      23:39      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R      24:39      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R      25:41      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R      26:41      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R      27:41      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R      28:41      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R      29:41      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R      30:41      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R      31:41      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R      32:41      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R      33:41      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R      34:41      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R      35:41      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R      36:41      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R      37:41      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R      38:41      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R      39:41      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R      40:41      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R      41:44      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R      42:44      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R      43:44      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R      44:44      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R      45:44      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R      46:44      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R      47:44      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R      48:44      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R      49:44      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R      50:44      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R      51:44      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R      52:44      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R      53:44      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R      54:44      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R      55:44      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R      56:44      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R      57:45      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R      58:45      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R      59:45      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    1:00:45      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    1:01:45      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    1:02:45      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    1:03:45      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    1:04:45      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    1:05:45      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    1:06:45      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    1:07:45      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    1:08:45      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    1:09:45      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    1:10:45      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    1:11:45      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    1:12:45      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    1:13:45      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    1:14:46      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    1:15:46      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    1:16:46      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    1:17:46      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    1:18:46      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    1:19:46      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    1:20:46      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    1:21:46      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    1:22:47      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    1:23:47      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    1:24:47      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    1:25:47      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    1:26:47      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    1:27:47      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    1:28:47      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    1:29:49      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    1:30:49      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    1:31:49      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    1:32:49      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    1:33:49      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    1:34:49      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    1:35:49      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    1:36:49      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    1:37:49      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    1:38:49      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    1:39:49      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    1:40:49      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    1:41:49      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    1:42:49      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    1:43:49      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    1:44:49      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    1:45:49      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    1:46:49      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    1:47:51      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    1:48:51      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    1:49:51      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    1:50:51      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    1:51:51      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    1:52:51      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    1:53:51      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    1:54:51      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    1:55:51      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    1:56:53      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    1:57:53      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    1:58:53      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    1:59:53      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    2:00:53      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    2:01:53      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    2:02:53      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    2:03:53      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    2:04:53      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    2:05:53      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    2:06:53      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    2:07:53      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    2:08:53      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    2:09:53      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    2:10:53      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    2:11:53      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    2:12:53      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    2:13:53      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    2:14:53      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    2:15:53      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    2:16:53      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    2:17:53      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    2:18:53      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    2:19:53      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    2:20:53      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    2:21:54      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    2:22:54      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    2:23:54      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    2:24:54      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    2:25:54      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    2:26:54      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    2:27:54      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    2:28:54      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    2:29:54      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    2:30:54      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    2:31:54      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    2:32:54      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    2:33:54      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    2:34:54      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    2:35:54      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    2:36:54      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    2:37:54      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    2:38:54      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    2:39:56      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    2:40:56      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    2:41:56      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    2:42:56      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    2:43:56      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    2:44:56      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    2:45:56      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    2:46:59      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    2:47:59      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    2:48:59      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    2:49:59      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    2:50:59      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    2:51:59      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    2:52:59      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    2:53:59      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    2:54:59      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    2:55:59      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    2:57:00      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    2:58:00      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    2:59:00      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    3:00:00      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    3:01:00      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    3:02:00      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    3:03:00      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    3:04:01      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    3:05:02      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    3:06:02      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    3:07:02      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    3:08:02      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    3:09:02      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    3:10:03      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    3:11:04      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    3:12:04      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    3:13:04      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    3:14:04      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    3:15:04      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    3:16:04      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    3:17:04      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    3:18:04      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    3:19:04      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    3:20:04      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    3:21:04      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    3:22:04      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    3:23:04      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    3:24:04      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    3:25:04      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    3:26:04      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    3:27:06      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    3:28:06      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    3:29:06      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    3:30:06      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    3:31:06      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    3:32:06      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    3:33:06      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    3:34:06      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    3:35:06      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    3:36:06      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    3:37:07      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    3:38:07      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    3:39:07      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    3:40:07      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    3:41:07      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    3:42:07      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    3:43:07      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    3:44:07      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    3:45:07      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    3:46:07      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    3:47:07      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    3:48:07      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    3:49:07      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    3:50:07      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    3:51:07      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    3:52:09      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    3:53:09      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    3:54:09      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    3:55:09      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    3:56:09      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    3:57:09      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    3:58:09      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    3:59:09      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    4:00:09      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    4:01:09      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    4:02:09      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    4:03:09      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    4:04:09      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    4:05:09      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    4:06:11      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    4:07:11      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    4:08:11      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    4:09:11      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    4:10:11      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    4:11:11      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    4:12:11      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    4:13:13      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    4:14:13      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    4:15:13      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    4:16:13      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    4:17:13      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    4:18:13      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    4:19:13      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    4:20:13      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    4:21:13      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    4:22:15      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    4:23:15      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    4:24:15      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    4:25:15      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    4:26:15      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    4:27:19      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    4:28:19      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    4:29:19      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    4:30:19      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    4:31:19      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    4:32:19      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    4:33:21      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    4:34:21      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    4:35:21      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    4:36:21      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    4:37:21      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    4:38:21      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    4:39:21      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    4:40:22      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    4:41:22      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    4:42:22      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    4:43:22      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    4:44:22      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    4:45:22      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    4:46:22      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    4:47:22      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    4:48:22      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    4:49:22      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    4:50:22      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    4:51:22      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    4:52:22      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    4:53:22      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    4:54:22      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    4:55:22      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    4:56:23      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    4:57:23      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    4:58:23      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    4:59:23      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    5:00:23      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    5:01:23      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    5:02:23      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    5:03:24      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    5:04:24      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    5:05:24      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    5:06:24      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    5:07:24      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    5:08:24      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    5:09:24      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    5:10:24      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    5:11:24      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    5:12:24      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    5:13:24      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    5:14:24      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    5:15:24      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    5:16:24      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    5:17:24      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    5:18:24      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    5:19:24      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    5:20:24      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    5:21:24      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    5:22:24      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    5:23:24      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    5:24:24      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    5:25:24      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    5:26:24      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    5:27:24      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    5:28:26      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    5:29:26      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    5:30:26      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    5:31:26      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    5:32:26      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    5:33:26      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    5:34:26      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    5:35:26      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    5:36:26      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    5:37:26      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    5:38:26      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    5:39:26      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    5:40:26      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    5:41:26      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    5:42:28      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    5:43:28      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    5:44:28      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    5:45:28      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    5:46:28      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    5:47:28      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    5:48:28      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    5:49:28      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    5:50:28      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    5:51:30      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    5:52:30      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    5:53:30      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    5:54:30      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    5:55:30      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    5:56:30      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    5:57:30      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    5:58:30      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    5:59:30      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    6:00:30      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    6:01:30      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    6:02:30      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    6:03:30      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    6:04:30      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    6:05:30      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    6:06:30      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    6:07:31      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    6:08:31      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    6:09:33      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    6:10:33      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    6:11:33      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    6:12:34      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    6:13:34      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    6:14:34      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    6:15:34      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    6:16:34      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    6:17:34      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    6:18:35      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    6:19:35      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    6:20:35      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    6:21:35      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    6:22:35      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    6:23:35      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    6:24:35      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    6:25:35      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    6:26:35      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    6:27:35      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    6:28:35      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    6:29:35      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    6:30:35      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    6:31:35      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    6:32:35      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    6:33:35      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    6:34:36      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    6:35:36      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    6:36:36      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    6:37:36      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    6:38:36      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    6:39:36      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    6:40:36      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    6:41:37      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    6:42:37      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    6:43:39      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    6:44:39      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    6:45:39      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    6:46:39      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    6:47:39      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    6:48:39      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    6:49:39      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    6:50:39      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    6:51:39      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    6:52:39      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    6:53:39      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    6:54:39      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    6:55:39      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    6:56:39      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    6:57:39      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    6:58:39      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    6:59:40      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    7:00:40      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    7:01:40      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    7:02:40      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    7:03:40      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    7:04:40      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    7:05:40      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    7:06:40      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    7:07:40      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    7:08:41      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    7:09:41      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    7:10:41      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    7:11:41      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    7:12:41      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    7:13:41      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    7:14:41      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    7:15:41      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    7:16:41      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    7:17:41      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    7:18:41      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    7:19:41      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    7:20:41      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    7:21:41      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    7:22:41      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    7:23:41      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    7:24:41      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    7:25:42      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    7:26:42      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    7:27:42      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    7:28:42      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    7:29:42      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    7:30:42      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    7:31:42      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    7:32:42      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    7:33:43      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    7:34:43      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    7:35:43      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    7:36:43      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    7:37:43      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    7:38:43      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    7:39:43      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    7:40:45      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    7:41:45      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    7:42:45      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    7:43:45      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    7:44:45      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    7:45:45      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    7:46:45      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    7:47:45      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    7:48:45      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    7:49:45      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    7:50:45      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    7:51:45      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    7:52:45      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    7:53:45      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    7:54:45      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    7:55:45      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    7:56:45      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    7:57:45      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    7:58:46      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    7:59:46      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    8:00:46      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    8:01:46      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    8:02:46      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    8:03:46      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    8:04:46      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    8:05:47      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    8:06:47      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    8:07:47      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    8:08:47      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    8:09:47      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    8:10:47      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    8:11:47      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    8:12:47      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    8:13:47      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    8:14:48      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    8:15:48      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    8:16:48      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    8:17:48      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    8:18:48      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    8:19:48      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    8:20:48      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    8:21:48      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    8:22:48      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    8:23:48      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    8:24:48      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    8:25:48      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    8:26:48      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    8:27:48      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    8:28:48      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    8:29:48      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    8:30:48      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    8:31:48      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    8:32:48      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    8:33:48      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    8:34:48      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    8:35:48      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    8:36:48      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    8:37:50      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    8:38:50      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    8:39:50      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    8:40:50      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    8:41:50      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    8:42:50      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    8:43:50      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    8:44:50      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    8:45:50      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    8:46:51      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    8:47:51      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    8:48:51      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    8:49:51      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    8:50:51      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    8:51:51      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    8:52:51      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    8:53:51      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    8:54:51      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    8:55:51      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    8:56:51      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    8:57:51      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    8:58:51      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    8:59:51      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    9:00:51      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    9:01:51      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    9:02:51      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    9:03:51      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    9:04:51      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    9:05:51      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    9:06:51      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    9:07:51      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    9:08:51      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    9:09:51      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    9:10:54      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    9:11:54      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    9:12:54      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    9:13:54      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    9:14:54      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    9:15:54      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    9:16:54      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    9:17:54      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    9:18:54      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    9:19:54      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    9:20:54      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    9:21:54      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    9:22:54      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    9:23:55      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    9:24:55      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    9:25:57      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    9:26:57      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    9:27:57      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    9:28:57      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    9:29:57      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    9:30:57      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    9:31:57      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    9:32:57      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    9:33:57      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    9:34:57      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    9:35:57      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    9:36:57      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    9:37:57      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    9:38:59      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    9:39:59      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    9:40:59      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    9:41:59      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    9:42:59      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    9:43:59      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    9:44:59      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    9:45:59      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    9:46:59      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    9:47:59      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    9:48:59      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    9:49:59      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    9:50:59      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    9:51:59      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    9:52:59      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    9:54:01      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    9:55:01      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    9:56:01      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    9:57:01      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    9:58:01      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R    9:59:01      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R   10:00:01      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R   10:01:01      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R   10:02:01      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R   10:03:01      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R   10:04:01      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R   10:05:01      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R   10:06:01      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R   10:07:01      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R   10:08:01      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R   10:09:01      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R   10:10:01      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R   10:11:01      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R   10:12:01      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R   10:13:02      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R   10:14:02      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R   10:15:02      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R   10:16:02      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R   10:17:02      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R   10:18:02      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R   10:19:02      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R   10:20:02      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R   10:21:02      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R   10:22:02      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R   10:23:02      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R   10:24:02      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R   10:25:02      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R   10:26:02      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R   10:27:02      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R   10:28:02      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R   10:29:02      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R   10:30:02      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R   10:31:02      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R   10:32:02      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37546059 gpu_misc_ run_tabz    bf996  R   10:33:02      1 gv013 ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON) ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON) ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON) ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON) ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON) ]]
+++ sleep 60
+++ true
++++ squeue -j 37546059
+slurm_load_jobs error: Invalid job id specified
+++ [[ -z '' ]]
+++ echo 'Job 37546059 has finished.'
+Job 37546059 has finished.
++++ sacct -j 37546059 --format=JobID,ExitCode
+++ sacct_output='JobID        ExitCode 
+------------ -------- 
+37546059          0:0 
+37546059.ba+      0:0 
+37546059.ex+      0:0 
+37546059.0        0:0 '
+++ declare -i INSTANCE_RETURN_CODE
++++ echo 'JobID        ExitCode 
+------------ -------- 
+37546059          0:0 
+37546059.ba+      0:0 
+37546059.ex+      0:0 
+37546059.0        0:0 '
++++ cut -d: -f1
++++ awk '{print $2}'
++++ grep '^37546059'
+++ INSTANCE_RETURN_CODE='0
+0
+0
+0'
+../utils.sh: line 181: 0
+0
+0
+0: syntax error in expression (error token is "0
+0
+0")

@@ -4,6 +4,7 @@ import os
 import shutil
 import signal
 import time
+import gc
 from contextlib import contextmanager
 from collections import namedtuple
 from typing import NamedTuple
@@ -15,8 +16,16 @@ from tabzilla_data_processing import process_data
 from tabzilla_datasets import TabularDataset
 from utils.scorer import BinScorer, ClassScorer, RegScorer
 from utils.timer import Timer
-
 import scipy.stats as stats
+
+def free_memory(sleep_time=0.1):
+    """ Black magic function to free torch memory and some jupyter whims """
+    import torch
+    gc.collect()
+    torch.cuda.synchronize()
+    gc.collect()
+    torch.cuda.empty_cache()
+    time.sleep(sleep_time)
 
 class NpEncoder(json.JSONEncoder):
     def default(self, obj):
@@ -242,12 +251,17 @@ def cross_validation(model: BaseModel, dataset: TabularDataset, time_limit: int,
         test_probs_list = []
 
         for j in range(args.num_ensembles):
+            try:
+                free_memory()
+            except Exception as e:
+                print(f"Failed to free memory, error message was: \n {e}")
             print("Ensemble iteration ", j+1, " of ", args.num_ensembles)
             # Create a new unfitted version of the model
             curr_model = model.clone()
 
             # Train model
             timers["train"].start()
+            print("Sizes of datasets: ", len(X_train[j]), len(X_val[j]), len(X_test[j]))
             # loss history can be saved if needed
             print("Fitting model, iteration ", i, " of ", len(dataset.split_indeces))
             loss_history, val_loss_history = curr_model.fit(
@@ -258,24 +272,28 @@ def cross_validation(model: BaseModel, dataset: TabularDataset, time_limit: int,
             )
             print("Done fitting model, history is: ", loss_history, val_loss_history)
             timers["train"].end()
-
+            n_test_rows = args.subset_rows
+            # Experimenting with limiting TabPFN test rows to save VRAM
+            # if "TabPFN" in str(args.model_name):
+            #     print("Limiting TabPFN test rows to 1000")
+            #     n_test_rows = 1000
             # evaluate on train set
             timers["train-eval"].start()
-            train_predictions, train_probs = curr_model.predict_wrapper(X_train[j], args.subset_rows)
+            train_predictions, train_probs = curr_model.predict_wrapper(X_train[j], n_test_rows)
             train_predictions_list.append(train_predictions)
             train_probs_list.append(train_probs)
             timers["train-eval"].end()
             print("Train eval done")
             # evaluate on val set
             timers["val"].start()
-            val_predictions, val_probs = curr_model.predict_wrapper(X_val[j], args.subset_rows)
+            val_predictions, val_probs = curr_model.predict_wrapper(X_val[j], n_test_rows)
             val_predictions_list.append(val_predictions)
             val_probs_list.append(val_probs)
             timers["val"].end()
             print("Val eval done")
             # evaluate on test set
             timers["test"].start()
-            test_predictions, test_probs = curr_model.predict_wrapper(X_test[j], args.subset_rows)
+            test_predictions, test_probs = curr_model.predict_wrapper(X_test[j], n_test_rows)
             test_predictions_list.append(test_predictions)
             test_probs_list.append(test_probs)
             timers["test"].end()
@@ -426,7 +444,7 @@ def get_experiment_parser():
     experiment_parser.add(
         "--scale_numerical_features",
         type=str,
-        choices=["None", "Quantile"],
+        choices=["None", "Quantile", "Standard"],
         default="None",
         help="Specify scaler for numerical features. Applied during data processing, prior to training and inference.",
     )

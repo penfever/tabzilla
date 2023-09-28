@@ -56,10 +56,4 @@ singularity exec --nv --overlay /scratch/bf996/singularity_containers/tabzilla.e
 source /ext3/env.sh; \
 printf 'running experiment with model %s on dataset %s in env %s\n\n' "$MODEL_NAME" "$DATASET_NAME" "$ENV_NAME"; \
 conda activate ${ENV_NAME}; \
-python tabzilla_experiment.py --experiment_config ${CONFIG_FILE} --dataset_dir ${DATSET_DIR} --model_name ${MODEL_NAME} \
->> ${LOG_DIR}/log_${SAVE_FILE}.txt; \
-zip -jr results.zip ${RESULTS_DIR}; \
-RESULT_FILE=${SAVE_FILE}_$(openssl rand -hex 2).zip; \
-printf 'saving results to %s\n\n' "$RESULT_FILE"; \
-mv ./results.zip ./${RESULT_FILE}; \
-rm -rf RESULTS_DIR;"
+python tabzilla_experiment.py --experiment_config ${CONFIG_FILE} --dataset_dir ${DATSET_DIR} --model_name ${MODEL_NAME};"

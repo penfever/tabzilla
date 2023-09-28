@@ -1,0 +1,259 @@
+++ model_name=TabPFNModel
+++ dataset_name=openml__skin-segmentation__9965
+++ env_name=torch
+++ instance_name=algs-catboost-tabpfn-large-1-18
+++ experiment_name=algs-catboost-tabpfn-large
+++ config_file=/scratch/bf996/tabzilla/TabZilla/tabzilla_experiment_config_gpu_mod_1_18.yml
+++ echo 'run_experiment: model_name: TabPFNModel'
+run_experiment: model_name: TabPFNModel
+++ echo 'run_experiment: dataset_name: openml__skin-segmentation__9965'
+run_experiment: dataset_name: openml__skin-segmentation__9965
+++ echo 'run_experiment: env_name: torch'
+run_experiment: env_name: torch
+++ echo 'run_experiment: instance_name: algs-catboost-tabpfn-large-1-18'
+run_experiment: instance_name: algs-catboost-tabpfn-large-1-18
+++ echo 'run_experiment: experiment_name: algs-catboost-tabpfn-large'
+run_experiment: experiment_name: algs-catboost-tabpfn-large
+++ echo 'run_experiment: config_file: /scratch/bf996/tabzilla/TabZilla/tabzilla_experiment_config_gpu_mod_1_18.yml'
+run_experiment: config_file: /scratch/bf996/tabzilla/TabZilla/tabzilla_experiment_config_gpu_mod_1_18.yml
+++ [[ -z /scratch/bf996/tabzilla/TabZilla/tabzilla_experiment_config_gpu_mod_1_18.yml ]]
+++ MAX_TRIES=1
+++ echo 'launching instance algs-catboost-tabpfn-large-1-18...'
+launching instance algs-catboost-tabpfn-large-1-18...
+++ COUNT=1
+++ '[' 1 -le 1 ']'
++++ awk '{print $4}'
++++ sbatch /scratch/bf996/tabzilla/scripts/batch/tabzilla_batch_mod.sbatch
+++ job1=37562548
+++ echo 'Executing job TabPFNModel openml__skin-segmentation__9965'
+Executing job TabPFNModel openml__skin-segmentation__9965
+++ echo 'Job id is 37562548'
+Job id is 37562548
+++ true
++++ squeue -j 37562548
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37562548 tandon_a1 run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 37562548
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37562548 tandon_a1 run_tabz    bf996  R       0:19      1 ga025 ]]
+++ sleep 60
+++ true
++++ squeue -j 37562548
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37562548 tandon_a1 run_tabz    bf996  R       1:19      1 ga025 ]]
+++ sleep 60
+++ true
++++ squeue -j 37562548
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37562548 tandon_a1 run_tabz    bf996  R       2:19      1 ga025 ]]
+++ sleep 60
+++ true
++++ squeue -j 37562548
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37562548 tandon_a1 run_tabz    bf996  R       3:19      1 ga025 ]]
+++ sleep 60
+++ true
++++ squeue -j 37562548
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37562548 tandon_a1 run_tabz    bf996  R       4:19      1 ga025 ]]
+++ sleep 60
+++ true
++++ squeue -j 37562548
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37562548 tandon_a1 run_tabz    bf996  R       5:19      1 ga025 ]]
+++ sleep 60
+++ true
++++ squeue -j 37562548
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37562548 tandon_a1 run_tabz    bf996  R       6:19      1 ga025 ]]
+++ sleep 60
+++ true
++++ squeue -j 37562548
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37562548 tandon_a1 run_tabz    bf996  R       7:19      1 ga025 ]]
+++ sleep 60
+++ true
++++ squeue -j 37562548
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37562548 tandon_a1 run_tabz    bf996  R       8:19      1 ga025 ]]
+++ sleep 60
+++ true
++++ squeue -j 37562548
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37562548 tandon_a1 run_tabz    bf996  R       9:19      1 ga025 ]]
+++ sleep 60
+++ true
++++ squeue -j 37562548
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37562548 tandon_a1 run_tabz    bf996  R      10:19      1 ga025 ]]
+++ sleep 60
+++ true
++++ squeue -j 37562548
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37562548 tandon_a1 run_tabz    bf996  R      11:19      1 ga025 ]]
+++ sleep 60
+++ true
++++ squeue -j 37562548
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37562548 tandon_a1 run_tabz    bf996  R      12:19      1 ga025 ]]
+++ sleep 60
+++ true
++++ squeue -j 37562548
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37562548 tandon_a1 run_tabz    bf996  R      13:19      1 ga025 ]]
+++ sleep 60
+++ true
++++ squeue -j 37562548
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37562548 tandon_a1 run_tabz    bf996  R      14:19      1 ga025 ]]
+++ sleep 60
+++ true
++++ squeue -j 37562548
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37562548 tandon_a1 run_tabz    bf996  R      15:19      1 ga025 ]]
+++ sleep 60
+++ true
++++ squeue -j 37562548
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37562548 tandon_a1 run_tabz    bf996  R      16:19      1 ga025 ]]
+++ sleep 60
+++ true
++++ squeue -j 37562548
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37562548 tandon_a1 run_tabz    bf996  R      17:19      1 ga025 ]]
+++ sleep 60
+++ true
++++ squeue -j 37562548
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37562548 tandon_a1 run_tabz    bf996  R      18:19      1 ga025 ]]
+++ sleep 60
+++ true
++++ squeue -j 37562548
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37562548 tandon_a1 run_tabz    bf996  R      19:19      1 ga025 ]]
+++ sleep 60
+++ true
++++ squeue -j 37562548
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37562548 tandon_a1 run_tabz    bf996  R      20:19      1 ga025 ]]
+++ sleep 60
+++ true
++++ squeue -j 37562548
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37562548 tandon_a1 run_tabz    bf996  R      21:19      1 ga025 ]]
+++ sleep 60
+++ true
++++ squeue -j 37562548
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37562548 tandon_a1 run_tabz    bf996  R      22:19      1 ga025 ]]
+++ sleep 60
+++ true
++++ squeue -j 37562548
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37562548 tandon_a1 run_tabz    bf996  R      23:19      1 ga025 ]]
+++ sleep 60
+++ true
++++ squeue -j 37562548
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37562548 tandon_a1 run_tabz    bf996  R      24:19      1 ga025 ]]
+++ sleep 60
+++ true
++++ squeue -j 37562548
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37562548 tandon_a1 run_tabz    bf996  R      25:19      1 ga025 ]]
+++ sleep 60
+++ true
++++ squeue -j 37562548
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37562548 tandon_a1 run_tabz    bf996  R      26:19      1 ga025 ]]
+++ sleep 60
+++ true
++++ squeue -j 37562548
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37562548 tandon_a1 run_tabz    bf996  R      27:19      1 ga025 ]]
+++ sleep 60
+++ true
++++ squeue -j 37562548
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37562548 tandon_a1 run_tabz    bf996  R      28:19      1 ga025 ]]
+++ sleep 60
+++ true
++++ squeue -j 37562548
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37562548 tandon_a1 run_tabz    bf996  R      29:19      1 ga025 ]]
+++ sleep 60
+++ true
++++ squeue -j 37562548
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37562548 tandon_a1 run_tabz    bf996  R      30:19      1 ga025 ]]
+++ sleep 60
+++ true
++++ squeue -j 37562548
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37562548 tandon_a1 run_tabz    bf996  R      31:19      1 ga025 ]]
+++ sleep 60
+++ true
++++ squeue -j 37562548
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37562548 tandon_a1 run_tabz    bf996  R      32:20      1 ga025 ]]
+++ sleep 60
+++ true
++++ squeue -j 37562548
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          37562548 tandon_a1 run_tabz    bf996  R      33:20      1 ga025 ]]
+++ sleep 60
+++ true
++++ squeue -j 37562548
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON) ]]
+++ sleep 60
+++ true
++++ squeue -j 37562548
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON) ]]
+++ sleep 60
+++ true
++++ squeue -j 37562548
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON) ]]
+++ sleep 60
+++ true
++++ squeue -j 37562548
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON) ]]
+++ sleep 60
+++ true
++++ squeue -j 37562548
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON) ]]
+++ sleep 60
+++ true
++++ squeue -j 37562548
+slurm_load_jobs error: Invalid job id specified
+++ [[ -z '' ]]
+++ echo 'Job 37562548 has finished.'
+Job 37562548 has finished.
++++ sacct -j 37562548 --format=JobID,ExitCode
+++ sacct_output='JobID        ExitCode 
+------------ -------- 
+37562548          0:0 
+37562548.ba+      0:0 
+37562548.ex+      0:0 
+37562548.0        0:0 '
+++ declare -i INSTANCE_RETURN_CODE
++++ grep '^37562548'
++++ echo 'JobID        ExitCode 
+------------ -------- 
+37562548          0:0 
+37562548.ba+      0:0 
+37562548.ex+      0:0 
+37562548.0        0:0 '
++++ awk '{print $2}'
++++ cut -d: -f1
+++ INSTANCE_RETURN_CODE='0
+0
+0
+0'
+../utils.sh: line 181: 0
+0
+0
+0: syntax error in expression (error token is "0
+0
+0")

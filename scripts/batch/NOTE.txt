@@ -1,0 +1,3 @@
+The batch scripts have to be launched from the 'scripts' directory:
+
+EG sbatch batch/submit.sh

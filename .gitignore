@@ -1,7 +1,16 @@
-#
-/TabZilla/datasets
-/TabZilla/results
-/TabZilla/logs
+#TabZilla-specific
+TabZilla/datasets
+TabZilla/results
+TabZilla/logs
+TabZilla/tables
+TabZilla/res
+TabZilla/output
+TabZilla/models/hopular/auxiliary/resources/*
+/TabZilla/tabpfn-catboost-s100-3000-mutinf-closest-equal
+/TabZilla/tabpfn-catboost-s100-3000-mutinf-closest-prop
+*config*.yml
+notes.md
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -132,7 +141,3 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
-
-
-# codebase specific 
-TabZilla/models/hopular/auxiliary/resources/*

@@ -134,9 +134,12 @@ def parse_results_file(results_file, blob_path):
                 if phase == "train-eval":
                     continue
                 for metric in contents["scorers"][phase].keys():
-                    fold_results[f"{metric}__{phase}"] = contents["scorers"][phase][
-                        metric
-                    ][fold_number]
+                    try:
+                        fold_results[f"{metric}__{phase}"] = contents["scorers"][phase][
+                            metric
+                        ][fold_number]
+                    except IndexError:
+                        print("No metric for: ", fold_results["exp_name"], metric, phase, fold_number)
 
             result_list.append(fold_results)
     else:

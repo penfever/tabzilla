@@ -1,0 +1,119 @@
+++ model_name=CatBoost
+++ dataset_name=openml__robert__168332
+++ env_name=gbdt
+++ instance_name=algs-catboost-tabpfn-large-0-0
+++ experiment_name=algs-catboost-tabpfn-large
+++ config_file=/scratch/bf996/tabzilla/TabZilla/tabzilla_experiment_config_gpu_mod_0_0.yml
+++ echo 'run_experiment: model_name: CatBoost'
+run_experiment: model_name: CatBoost
+++ echo 'run_experiment: dataset_name: openml__robert__168332'
+run_experiment: dataset_name: openml__robert__168332
+++ echo 'run_experiment: env_name: gbdt'
+run_experiment: env_name: gbdt
+++ echo 'run_experiment: instance_name: algs-catboost-tabpfn-large-0-0'
+run_experiment: instance_name: algs-catboost-tabpfn-large-0-0
+++ echo 'run_experiment: experiment_name: algs-catboost-tabpfn-large'
+run_experiment: experiment_name: algs-catboost-tabpfn-large
+++ echo 'run_experiment: config_file: /scratch/bf996/tabzilla/TabZilla/tabzilla_experiment_config_gpu_mod_0_0.yml'
+run_experiment: config_file: /scratch/bf996/tabzilla/TabZilla/tabzilla_experiment_config_gpu_mod_0_0.yml
+++ [[ -z /scratch/bf996/tabzilla/TabZilla/tabzilla_experiment_config_gpu_mod_0_0.yml ]]
+++ MAX_TRIES=1
+++ echo 'launching instance algs-catboost-tabpfn-large-0-0...'
+launching instance algs-catboost-tabpfn-large-0-0...
+++ COUNT=1
+++ '[' 1 -le 1 ']'
++++ sbatch /scratch/bf996/tabzilla/scripts/batch/tabzilla_batch_mod.sbatch
++++ awk '{print $4}'
+++ job1=38206162
+++ echo 'Executing job CatBoost openml__robert__168332'
+Executing job CatBoost openml__robert__168332
+++ echo 'Job id is 38206162'
+Job id is 38206162
+++ true
++++ squeue -j 38206162
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          38206162  cl,cm,cs run_tabz    bf996 PD       0:00      1 (Priority) ]]
+++ sleep 60
+++ true
++++ squeue -j 38206162
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          38206162        cs run_tabz    bf996  R       0:04      1 cs243 ]]
+++ sleep 60
+++ true
++++ squeue -j 38206162
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          38206162        cs run_tabz    bf996  R       1:05      1 cs243 ]]
+++ sleep 60
+++ true
++++ squeue -j 38206162
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          38206162        cs run_tabz    bf996  R       2:05      1 cs243 ]]
+++ sleep 60
+++ true
++++ squeue -j 38206162
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          38206162        cs run_tabz    bf996  R       3:05      1 cs243 ]]
+++ sleep 60
+++ true
++++ squeue -j 38206162
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          38206162        cs run_tabz    bf996  R       4:05      1 cs243 ]]
+++ sleep 60
+++ true
++++ squeue -j 38206162
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          38206162        cs run_tabz    bf996  R       5:05      1 cs243 ]]
+++ sleep 60
+++ true
++++ squeue -j 38206162
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON) ]]
+++ sleep 60
+++ true
++++ squeue -j 38206162
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON) ]]
+++ sleep 60
+++ true
++++ squeue -j 38206162
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON) ]]
+++ sleep 60
+++ true
++++ squeue -j 38206162
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON) ]]
+++ sleep 60
+++ true
++++ squeue -j 38206162
+++ [[ -z              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON) ]]
+++ sleep 60
+++ true
++++ squeue -j 38206162
+slurm_load_jobs error: Invalid job id specified
+++ [[ -z '' ]]
+++ echo 'Job 38206162 has finished.'
+Job 38206162 has finished.
++++ sacct -j 38206162 --format=JobID,ExitCode
+++ sacct_output='JobID        ExitCode 
+------------ -------- 
+38206162          0:0 
+38206162.ba+      0:0 
+38206162.ex+      0:0 
+38206162.0        0:0 '
+++ declare -i INSTANCE_RETURN_CODE
++++ echo 'JobID        ExitCode 
+------------ -------- 
+38206162          0:0 
+38206162.ba+      0:0 
+38206162.ex+      0:0 
+38206162.0        0:0 '
++++ awk '{print $2}'
++++ cut -d: -f1
++++ grep '^38206162'
+++ INSTANCE_RETURN_CODE='0
+0
+0
+0'
+../utils.sh: line 182: 0
+0
+0
+0: syntax error in expression (error token is "0
+0
+0")

@@ -1,0 +1,23 @@
+# A selection of large TabZilla datasets
+DATASETS=(
+  openml__robert__168332
+  openml__CIFAR_10__167124
+  openml__poker-hand__9890
+  openml__Fashion-MNIST__146825
+  openml__riccardo__168338
+  openml__connect-4__146195
+  openml__higgs__146606
+  openml__albert__189356
+  openml__volkert__168331
+  openml__airlines__189354
+  openml__pendigits__32
+  openml__gas-drift-different-concentrations__9987
+  openml__elevators__3711
+  openml__hill-valley__145847
+  openml__eeg-eye-state__14951
+  openml__mfeat-pixel__146824
+  openml__mfeat-factors__12
+  openml__semeion__9964
+  openml__skin-segmentation__9965
+  openml__libras__360948
+)

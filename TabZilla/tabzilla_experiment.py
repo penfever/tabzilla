@@ -146,7 +146,6 @@ class TabZillaObjective(object):
             num_ensembles=self.experiment_args.num_ensembles,
             hparam_seed=self.hparam_seed,
         )
-
         # parameterized model
         model = self.model_handle(trial_params, args)
 

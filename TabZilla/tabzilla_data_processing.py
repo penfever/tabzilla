@@ -1,10 +1,12 @@
 import numpy as np
 import time
+import faiss
 from sklearn.compose import ColumnTransformer
 from sklearn.impute import SimpleImputer
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import OneHotEncoder, QuantileTransformer
 from sklearn.feature_selection import SelectKBest, mutual_info_classif
+from sklearn.decomposition import PCA
 
 class CoresetSampler:
     def __init__(self, number_of_set_points, number_of_starting_points, rand_seed):
@@ -81,29 +83,17 @@ class SubsetMaker(object):
             feature_indices = np.arange(X.shape[1])
         return X[row_indices[:, None], feature_indices], y[row_indices]
     
+    def pca_subset(self, X, y, action='features', split='train'):
+        X = self.feature_selector.transform(X)
+        return X, y
+
     def mutual_information_subset(self, X, y, action='features', split='train'):
-        if split not in ['train', 'val', 'test']:
-            raise ValueError("split must be 'train', 'val', or 'test'")
-        if split == 'train':
-            #NOTE: we are only fitting on the first split we see to save time here
-            if getattr(self, 'feature_selector', None) is None:
-                print("Fitting mutual information feature selector ...")
-                #start the timer
-                timer = time.time()
-                self.feature_selector = SelectKBest(mutual_info_classif, k=self.subset_features)
-                X = self.feature_selector.fit_transform(X, y)
-                print(f"Done fitting mutual information feature selector in {round(time.time() - timer, 1)} seconds")
-            else:
-                X = self.feature_selector.transform(X)
-            return X, y
-        else:
-            X = self.feature_selector.transform(X)
-            return X, y
+        X = self.feature_selector.transform(X)
+        return X, y
 
     def K_means_sketch(self, X, k, fit_first_only=False, rand_seed=0):
         print("Random seed: ", rand_seed)
         # This function returns the indices of the k samples that are the closest to the k-means centroids
-        import faiss
         X = np.ascontiguousarray(X, dtype=np.float32)
         if fit_first_only and getattr(self, 'kmeans', None) is None:
             print("Fitting kmeans sketch  ...")
@@ -141,22 +131,22 @@ class SubsetMaker(object):
     def closest_sketch(self, X, k, X_val, rand_seed=1):
         # This function returns the indices of the k samples that are the closest to the samples in X_val
         # Using faiss
-        import faiss
         X = np.ascontiguousarray(X, dtype=np.float32)
         X_val = np.ascontiguousarray(X_val, dtype=np.float32)
         index = faiss.IndexFlatL2(X.shape[1])
         index.add(X)
-        target_size = min(k * rand_seed, X_val.shape[0])
         try:
             X_val_reshaped = X_val.reshape(1, -1).astype(np.float32)
-            _, indices = index.search(X_val_reshaped, target_size)
+            _, indices = index.search(X_val_reshaped, 1)
         except:
-            _, indices = index.search(X_val, target_size)
+            _, indices = index.search(X_val, 1)
+        print("Size of indices before reshape: ", indices.shape)
+        del X_val_reshaped
         assert rand_seed > 0, "Random seed for closest sketch must be greater than 0"
         if rand_seed == 1:
-            return indices.reshape(-1)
+            return indices[:k, :].reshape(-1)
         else:
-            return indices[:, (rand_seed-1)*k:].reshape(-1)
+            return indices[(rand_seed-1)*k:((rand_seed-1)*k)+k, :].reshape(-1)
 
     def sketch(self, X, y, sketch_size, X_val=None, rand_seed=0):
         self.seeds_seen.add(rand_seed)
@@ -171,6 +161,7 @@ class SubsetMaker(object):
             indices = self.coreset_sketch(X, sketch_size, rand_seed=rand_seed)
         elif self.subset_rows_method == "closest":
             indices = self.closest_sketch(X, sketch_size, X_val, rand_seed=len(self.seeds_seen))
+            print("indices.shape in closest sketch", indices.shape)
         else:
             raise NotImplementedError("Sketch type not implemented")
 
@@ -204,6 +195,8 @@ class SubsetMaker(object):
                 X, y = self.first_subset(X, y, action=['features'])
             elif self.subset_features_method == "mutual_information":
                 X, y = self.mutual_information_subset(X, y, action='features', split=split)
+            elif self.subset_features_method == "pca":
+                X, y = self.pca_subset(X, y, action='features', split=split)
             else:
                 raise ValueError(f"subset_features_method not recognized: {self.subset_features_method}")
         if 'rows' in action:
@@ -263,11 +256,12 @@ def process_data(
 ):
     
     # validate the scaler
-    assert scaler in ["None", "Quantile"], f"scaler not recognized: {scaler}"
+    assert scaler in ["None", "Quantile", "Standard"], f"scaler not recognized: {scaler}"
 
     if scaler == "Quantile":
         scaler_function = QuantileTransformer(n_quantiles=min(len(train_index), 1000))  # use either 1000 quantiles or num. training instances, whichever is smaller
-
+    elif scaler == "Standard":
+        scaler_function = StandardScaler()
 
     num_mask = np.ones(dataset.X.shape[1], dtype=int)
     num_mask[dataset.cat_idx] = 0
@@ -327,9 +321,19 @@ def process_data(
     if scaler != "None":
         if verbose:
             print(f"Scaling the data using {scaler}...")
-        X_train[:, num_mask] = scaler_function.fit_transform(X_train[:, num_mask])
-        X_val[:, num_mask] = scaler_function.transform(X_val[:, num_mask])
-        X_test[:, num_mask] = scaler_function.transform(X_test[:, num_mask])
+        try:
+            X_train[:, num_mask] = scaler_function.fit_transform(X_train[:, num_mask])
+            X_val[:, num_mask] = scaler_function.transform(X_val[:, num_mask])
+            X_test[:, num_mask] = scaler_function.transform(X_test[:, num_mask])
+        except:
+            if scaler == "Standard":
+                print("Warning: StandardScaler failed. Trying with_mean=False for sparse matrices...")
+                scaler_function = StandardScaler(with_mean=False)
+                X_train[:, num_mask] = scaler_function.fit_transform(X_train[:, num_mask])
+                X_val[:, num_mask] = scaler_function.transform(X_val[:, num_mask])
+                X_test[:, num_mask] = scaler_function.transform(X_test[:, num_mask])
+            else:
+                raise ValueError(f"Scaling failed with scaler {scaler}")
 
     if one_hot_encode:
         ohe = OneHotEncoder(sparse=False, handle_unknown="ignore")
@@ -346,43 +350,71 @@ def process_data(
     if (args.subset_features > 0 or args.subset_rows > 0) and (args.subset_features < args.num_features or args.subset_rows < len(X_train)):
         if getattr(dataset, 'ssm', None) is None:
             dataset.ssm = SubsetMaker(args.subset_features, args.subset_rows, args.subset_features_method, args.subset_rows_method, args.y_equalizer)
+        if 0 < args.subset_features < args.num_features and args.subset_features_method == "mutual_information":
+            if getattr(dataset.ssm, 'feature_selector', None) is None:
+                #NOTE: we are only fitting on the first split we see to save time here
+                print("Fitting mutual information feature selector ...")
+                #start the timer
+                timer = time.time()
+                dataset.ssm.feature_selector = SelectKBest(mutual_info_classif, k=args.subset_features)
+                _ = dataset.ssm.feature_selector.fit_transform(X_train, y_train)
+                print(f"Done fitting mutual information feature selector in {round(time.time() - timer, 1)} seconds")
+        if 0 < args.subset_features < args.num_features and args.subset_features_method == "pca":
+            if getattr(dataset.ssm, 'feature_selector', None) is None:
+                #NOTE: we are only fitting on the first split we see to save time here
+                print("Fitting pca feature selector ...")
+                #start the timer
+                timer = time.time()
+                dataset.ssm.feature_selector = PCA(n_components=args.subset_features)
+                _ = dataset.ssm.feature_selector.fit_transform(X_train)
+                print(f"Done fitting pca feature selector in {round(time.time() - timer, 1)} seconds")
         X_train_l = []
         y_train_l = []
         X_val_l = []
         y_val_l = []
         X_test_l = []
         y_test_l = []
-        if 0 < args.subset_features < args.num_features:
-            X_train_t, y_train_t = dataset.ssm.make_subset(
-                X_train,
-                y_train,
-                X_val,
-                split='train',
-                num_classes=dataset.num_classes,
-                rand_seed=args.hparam_seed,
-                action=['features'],
-            )
-            X_val_t, y_val_t = dataset.ssm.make_subset(
-                X_val,
-                y_val,
-                None,
-                split='val',
-                num_classes=dataset.num_classes,
-                rand_seed=args.hparam_seed,
-                action=['features'],
-            )
-            X_test_t, y_test_t = dataset.ssm.make_subset(
-                X_test,
-                y_test,
-                None,
-                split='test',
-                num_classes=dataset.num_classes,
-                rand_seed=args.hparam_seed,
-                action=['features'],
-            )
-        if 0 < args.subset_rows < len(X_train):
+        #features and rows
+        if 0 < args.subset_features < args.num_features and 0 < args.subset_rows < len(X_train):
             for j in range(args.num_ensembles):
                 print(f"making subset {j} with {args.subset_features} features and {args.subset_rows} rows...")
+                X_val_t, y_val_t = dataset.ssm.make_subset(
+                    X_val,
+                    y_val,
+                    None,
+                    split='val',
+                    num_classes=dataset.num_classes,
+                    rand_seed=args.hparam_seed,
+                    action=['features'],
+                )  
+                X_test_t, y_test_t = dataset.ssm.make_subset(
+                    X_test,
+                    y_test,
+                    None,
+                    split='test',
+                    num_classes=dataset.num_classes,
+                    rand_seed=args.hparam_seed,
+                    action=['features'],
+                )
+                X_train_t, y_train_t = dataset.ssm.make_subset(
+                    X_train,
+                    y_train,
+                    X_val_t,
+                    split='train',
+                    num_classes=dataset.num_classes,
+                    rand_seed=args.hparam_seed + j,
+                    action=['features', 'rows'],
+                )
+                X_train_l.append(X_train_t)
+                y_train_l.append(y_train_t)
+                X_val_l.append(X_val_t)
+                y_val_l.append(y_val_t)
+                X_test_l.append(X_test_t)
+                y_test_l.append(y_test_t)
+        #rows only
+        elif 0 < args.subset_rows < len(X_train):
+            for j in range(args.num_ensembles):
+                print(f"making subset {j} with {args.subset_rows} rows...")
                 X_train_t, y_train_t = dataset.ssm.make_subset(
                     X_train,
                     y_train,
@@ -392,15 +424,54 @@ def process_data(
                     rand_seed=args.hparam_seed + j,
                     action=['rows'],
                 )
+                X_val_t, y_val_t = X_val, y_val
+                X_test_t, y_test_t = X_test, y_test
                 X_train_l.append(X_train_t)
                 y_train_l.append(y_train_t)
-                X_val_l.append(X_val)
-                y_val_l.append(y_val)
-                X_test_l.append(X_test)
-                y_test_l.append(y_test)
+                X_val_l.append(X_val_t)
+                y_val_l.append(y_val_t)
+                X_test_l.append(X_test_t)
+                y_test_l.append(y_test_t)
+        #features only
         else:
-            X_train_l = [X_train]*args.num_ensembles
-            y_train_l = [y_train]*args.num_ensembles
+            for j in range(args.num_ensembles):
+                print(f"making subset {j} with {args.subset_features} features ...")
+                X_val_t, y_val_t = dataset.ssm.make_subset(
+                    X_val,
+                    y_val,
+                    None,
+                    split='val',
+                    num_classes=dataset.num_classes,
+                    rand_seed=args.hparam_seed,
+                    action=['features'],
+                )  
+                X_test_t, y_test_t = dataset.ssm.make_subset(
+                    X_test,
+                    y_test,
+                    None,
+                    split='test',
+                    num_classes=dataset.num_classes,
+                    rand_seed=args.hparam_seed,
+                    action=['features'],
+                )
+                X_train_t, y_train_t = dataset.ssm.make_subset(
+                    X_train,
+                    y_train,
+                    X_val_t,
+                    split='train',
+                    num_classes=dataset.num_classes,
+                    rand_seed=args.hparam_seed + j,
+                    action=['features'],
+                )
+                X_train_l.append(X_train_t)
+                y_train_l.append(y_train_t)
+                X_val_l.append(X_val_t)
+                y_val_l.append(y_val_t)
+                X_test_l.append(X_test_t)
+                y_test_l.append(y_test_t)
+    else:
+        X_train_l = [X_train]*args.num_ensembles
+        y_train_l = [y_train]*args.num_ensembles
         X_val_l = [X_val]*args.num_ensembles
         y_val_l = [y_val]*args.num_ensembles
         X_test_l = [X_test]*args.num_ensembles

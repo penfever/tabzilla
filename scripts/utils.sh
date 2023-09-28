@@ -4,8 +4,9 @@
 
 # constants
 image_family=tabzilla
-service_account=default-compute-instance@research-collab-naszilla.iam.gserviceaccount.com
-zone=us-central1-a
+service_account=research-collab@tabular-400321.iam.gserviceaccount.com
+zone=us-east4-a
+#https://cloud.google.com/compute/docs/regions-zones
 project=research-collab-naszilla
 machine_type=n1-highmem-2
 
@@ -129,6 +130,80 @@ run_experiment() {
   # we don't need to delete the instance here, because we set a return trap
 }
 
+run_experiment_slurm() {
+
+  # $1 = model name
+  # $2 = dataset name
+  # $3 = env name
+  # $4 = instance name
+  # $5 = experiment name
+  # $6 = config file
+  model_name="$1"
+  dataset_name="$2"
+  env_name="$3"
+  instance_name="$4"
+  experiment_name="$5"
+  config_file="$6"
+
+  echo "run_experiment: model_name: ${model_name}"
+  echo "run_experiment: dataset_name: ${dataset_name}"
+  echo "run_experiment: env_name: ${env_name}"
+  echo "run_experiment: instance_name: ${instance_name}"
+  echo "run_experiment: experiment_name: ${experiment_name}"
+  echo "run_experiment: config_file: ${config_file}"
+
+  if [[ -z "$config_file" ]]; then
+    echo "The variable config_file is empty. Exiting the script."
+    exit 1
+  fi
+
+  # maximum number of attempts at creating slurm instance
+  MAX_TRIES=1
+
+  echo "launching instance ${instance_name}..."
+
+  COUNT=1
+  while [ $COUNT -le $MAX_TRIES ]; do
+
+    # TODO: srun or sbatch, save return code
+    job1=$(sbatch /scratch/bf996/tabzilla/scripts/batch/tabzilla_batch_mod.sbatch | awk '{print $4}')
+
+    echo "Executing job ${model_name} ${dataset_name}"
+    echo "Job id is ${job1}"
+
+    while true; do
+    # Check if the output of the squeue command is empty
+    if [[ -z $(squeue -j "$job1") ]]; then
+        echo "Job $job1 has finished."
+        # Get the exit code
+        sacct_output=$(sacct -j "$job1" --format=JobID,ExitCode)
+        # Extract only the exit code part
+        declare -i INSTANCE_RETURN_CODE
+        INSTANCE_RETURN_CODE=$(echo "$sacct_output" | grep "^$job1" | awk '{print $2}' | cut -d: -f1)
+        break
+    else
+        sleep 60
+    fi
+    done
+
+    if [[ $INSTANCE_RETURN_CODE -ne 0 ]]; then
+      # failed to create instance
+      let COUNT=COUNT+1
+      echo "failed to create instance during attempt ${COUNT}... (exit code: ${INSTANCE_RETURN_CODE})"
+      if [[ $COUNT -ge $(( $MAX_TRIES + 1 )) ]]; then
+        echo "too many create-instance attempts. giving up."
+        exit 1
+      fi
+      echo "trying again in 30 seconds..."
+      sleep 30
+    else
+      # success!
+      break
+    fi
+  done
+  echo "successfully created instance: ${instance_name}"
+}
+
 run_experiment_gpu() {
 
   # identical to run_experiment(), but attaches a teslsa T4 GPU to the instance and uses a 200GB disk rather than default 100GB
@@ -157,7 +232,7 @@ run_experiment_gpu() {
   # set a return trap to delete the instance when this function returns
   trap "echo deleting instance ${instance_name}...; printf \"Y\" | gcloud compute instances delete ${instance_name} --zone=${zone} --project=${project}" RETURN
 
-  # maximum number of attempts at creating gcloud instance and ssh
+  # maximum number of attempts at running experiment
   MAX_TRIES=3
 
   echo "launching instance ${instance_name}..."
