@@ -6,7 +6,7 @@
 #SBATCH --cpus-per-task=8
 #SBATCH --time=47:59:00
 #SBATCH --mem=128GB
-#%%GPU_CONFIG%%
+#SBATCH --gres=gpu:1
 #SBATCH --job-name=run_tabzilla_expt
 #SBATCH --mail-type=BEGIN,END
 #SBATCH --mail-user=bf996@nyu.edu

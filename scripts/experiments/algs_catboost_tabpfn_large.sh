@@ -69,10 +69,8 @@ target_config="${CONFIG_FILE_NAMES[h]}"
       tabpfn_env="TabPFNModel:torch"
       if [ "$model_env" = "$catboost_env" ]; then
           bash_script=$GBDT_BASH
-          gpu_text="SBATCH --gres=gpu:1"
       else
           bash_script=$TORCH_BASH
-          gpu_text="SBATCH --gres=gpu:1"
       fi
 
       model="${model_env%%:*}"
@@ -104,7 +102,6 @@ target_config="${CONFIG_FILE_NAMES[h]}"
       ${target_config} > ${config_file}
       sleep 1
       sed -e "s#%%EXPT_CONFIG%%#${config_file}#g" \
-      -e "s#%%GPU_CONFIG%%#${gpu_text}#g" \
       -e "s#%%ENV_CONFIG%%#${bash_script}#g" \
       -e "s#%%DATASET_PATH%%#${DATASETS[j]}#g" \
       -e "s#%%MODEL_NAME%%#${model}#g" \

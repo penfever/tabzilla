@@ -19,9 +19,9 @@ MODEL_NAME=CatBoost
 # 7200 features, 10000 samples
 #DATASET_NAME=/openml__robert__168332
 # 10 features, 1 Mn samples
-# DATASET_NAME=/openml__poker-hand__9890
+DATASET_NAME=/openml__poker-hand__9890
 # 28 features, 100000 samples
-DATASET_NAME=/openml__higgs__146606
+# DATASET_NAME=/openml__higgs__146606
 
 # name of the config file to use
 #CONFIG_FILE=tabzilla_experiment_config.yml

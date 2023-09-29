@@ -12,13 +12,16 @@
 # /scratch/bf996/tabzilla/TabZilla/tabzilla_experiment_config_gpu_s100-3000_mutinf_closest_prop.yml
 # /scratch/bf996/tabzilla/TabZilla/tabzilla_experiment_config_gpu_s100-3000_mutinf_closest_equal.yml
 # /scratch/bf996/tabzilla/TabZilla/tabzilla_experiment_config_gpu_s100-3000_mutinf_rand_prop_3ens.yml
+# /scratch/bf996/tabzilla/TabZilla/tabzilla_experiment_config_gpu_s100-9000_mutinf_rand_prop.yml
 
 CONFIG_FILE_NAMES=(
     /scratch/bf996/tabzilla/TabZilla/tabzilla_experiment_config_gpu_s100-3000_mutinf_closest_prop.yml
     /scratch/bf996/tabzilla/TabZilla/tabzilla_experiment_config_gpu_s100-3000_mutinf_closest_equal.yml
-    /scratch/bf996/tabzilla/TabZilla/tabzilla_experiment_config_gpu_s100-9000_mutinf_rand_prop.yml
+    /scratch/bf996/tabzilla/TabZilla/tabzilla_experiment_config_gpu_s100-3000_pca_rand_equal.yml
+    /scratch/bf996/tabzilla/TabZilla/tabzilla_experiment_config_gpu_s100-3000_pca_rand_prop.yml
     /scratch/bf996/tabzilla/TabZilla/tabzilla_experiment_config_gpu_s100-3000_rand_rand_equal.yml
     /scratch/bf996/tabzilla/TabZilla/tabzilla_experiment_config_gpu_s100-3000_rand_rand_prop.yml
+    /scratch/bf996/tabzilla/TabZilla/tabzilla_experiment_config_gpu_s300-3000_mutinf_rand_prop.yml
 )
 
 

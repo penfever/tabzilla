@@ -16,6 +16,6 @@ export MASTER_PORT=$(shuf -i 10000-65500 -n 1);
 export MASTER_ADDR="$(hostname -s).hpc.nyu.edu";
 
 srun \
-    /bin/bash /scratch/bf996/tabzilla/scripts/run_tabzilla_env.bash \
+    /bin/bash /scratch/bf996/tabzilla/scripts/run_tabzilla_env_gbdt.bash \
     /bin/bash -c \
-    'python tabzilla_experiment.py --experiment_config /scratch/bf996/tabzilla/TabZilla/tabzilla_experiment_config_gpu_mod_1_6.yml --dataset_dir ./datasets/openml__higgs__146606 --model_name TabPFNModel'
+    'python tabzilla_experiment.py --experiment_config /scratch/bf996/tabzilla/TabZilla/tabzilla_experiment_config_gpu_mod_0_3.yml --dataset_dir ./datasets/openml__Fashion-MNIST__146825 --model_name CatBoost'

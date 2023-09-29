@@ -92,30 +92,27 @@ class SubsetMaker(object):
         return X, y
 
     def K_means_sketch(self, X, k, fit_first_only=False, rand_seed=0):
-        print("Random seed: ", rand_seed)
+        rng = np.random.default_rng(rand_seed)
+        addl_steps = int(rng.choice(10, 1))
         # This function returns the indices of the k samples that are the closest to the k-means centroids
         X = np.ascontiguousarray(X, dtype=np.float32)
         if fit_first_only and getattr(self, 'kmeans', None) is None:
             print("Fitting kmeans sketch  ...")
             #start the timer
             timer = time.time()
-            self.kmeans = faiss.Kmeans(X.shape[1], k, niter=15, verbose=False)
+            self.kmeans = faiss.Kmeans(X.shape[1], k, niter=15+addl_steps, verbose=False)
             self.kmeans.train(X)
             print(f"Done fitting in {round(time.time() - timer, 1)} seconds")
         elif fit_first_only and getattr(self, 'kmeans', None) is not None:
             pass
         else:
-            self.kmeans = faiss.Kmeans(X.shape[1], k, niter=15, verbose=False)
+            self.kmeans = faiss.Kmeans(X.shape[1], k, niter=15+addl_steps, verbose=False)
             self.kmeans.train(X)
         cluster_centers = self.kmeans.centroids
         index = faiss.IndexFlatL2(X.shape[1])
         index.add(cluster_centers)
-        s_val = min(k * rand_seed, index.ntotal)
-        _, indices = index.search(cluster_centers, s_val)
-        if rand_seed == 1:
-            return indices[:k, :].reshape(-1)
-        else:
-            return indices[(rand_seed-1)*k:((rand_seed-1)*k)+k, :].reshape(-1)
+        _, indices = index.search(cluster_centers, 1)
+        return indices.reshape(-1)
 
     def coreset_sketch(self, X, k, rand_seed=0):
         # This function returns the indices of the k samples that are a greedy coreset
@@ -139,7 +136,6 @@ class SubsetMaker(object):
             _, indices = index.search(X_val_reshaped, 1)
         except:
             _, indices = index.search(X_val, 1)
-        print("Size of indices before reshape: ", indices.shape)
         del X_val_reshaped
         assert rand_seed > 0, "Random seed for closest sketch must be greater than 0"
         if rand_seed == 1:
@@ -160,7 +156,6 @@ class SubsetMaker(object):
             indices = self.coreset_sketch(X, sketch_size, rand_seed=rand_seed)
         elif self.subset_rows_method == "closest":
             indices = self.closest_sketch(X, sketch_size, X_val, rand_seed=len(self.seeds_seen))
-            print("indices.shape in closest sketch", indices.shape)
         else:
             raise NotImplementedError("Sketch type not implemented")
 
