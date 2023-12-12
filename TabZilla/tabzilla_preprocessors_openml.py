@@ -268,10 +268,10 @@ def get_openml_task_metadata(save=False):
 
     implemented_tasks = [kwargs["openml_task_id"] for kwargs in openml_tasks]
 
-    task_df["in_repo"] = False
-    task_df.loc[implemented_tasks, "in_repo"] = True
-    in_repo = task_df.pop("in_repo")
-    task_df.insert(0, "in_repo", in_repo)
+    # task_df["in_repo"] = False
+    # task_df.loc[implemented_tasks, "in_repo"] = True
+    # in_repo = task_df.pop("in_repo")
+    # task_df.insert(0, "in_repo", in_repo)
 
     if save:
         task_df.to_csv("openml_task_metadata.csv")
