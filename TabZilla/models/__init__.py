@@ -93,5 +93,9 @@ def str2model(model):
         from models.danet import DANet
         return DANet
 
+    elif model == "ExcelFormer":
+        from models.excelformer import ExcelFormer
+        return ExcelFormer
+
     else:
         raise NotImplementedError("Model \"" + model + "\" not yet implemented")

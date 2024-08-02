@@ -488,6 +488,12 @@ def get_experiment_parser():
         help="Number of features to use for training and testing. -1 means use all features.",
     )
     experiment_parser.add(
+        "--checkpoint_path",
+        type=str,
+        default="",
+        help="Name of TabPFN checkpoint to load",
+    )
+    experiment_parser.add(
         "--subset_rows_method",
         type=str,
         choices=["random", "first", "kmeans", "coreset", "closest"],
@@ -497,7 +503,7 @@ def get_experiment_parser():
     experiment_parser.add(
         "--subset_features_method",
         type=str,
-        choices=["random", "first", "mutual_information"],
+        choices=["random", "first", "mutual_information", "pca"],
         default="random",
         help="Method for selecting features. 'random' means select randomly, 'first' means select the first features, 'mutual information' wraps sklearn's mutual_info_classif.",
     )

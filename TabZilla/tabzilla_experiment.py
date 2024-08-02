@@ -90,6 +90,7 @@ class TabZillaObjective(object):
             "args",
             [
                 "model_name",
+                "checkpoint_path",
                 "batch_size",
                 "scale_numerical_features",
                 "val_batch_size",
@@ -123,6 +124,7 @@ class TabZillaObjective(object):
 
         args = arg_namespace(
             model_name=self.model_handle.__name__,
+            checkpoint_path=self.experiment_args.checkpoint_path,
             batch_size=self.experiment_args.batch_size,
             val_batch_size=self.experiment_args.val_batch_size,
             scale_numerical_features=self.experiment_args.scale_numerical_features,

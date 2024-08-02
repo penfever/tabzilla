@@ -4,7 +4,7 @@ import faiss
 from sklearn.compose import ColumnTransformer
 from sklearn.impute import SimpleImputer
 from sklearn.pipeline import Pipeline
-from sklearn.preprocessing import OneHotEncoder, QuantileTransformer
+from sklearn.preprocessing import OneHotEncoder, QuantileTransformer, StandardScaler
 from sklearn.feature_selection import SelectKBest, mutual_info_classif
 from sklearn.decomposition import PCA
 
@@ -265,6 +265,8 @@ def process_data(
     X_train, y_train = dataset.X[train_index], dataset.y[train_index]
     X_val, y_val = dataset.X[val_index], dataset.y[val_index]
     X_test, y_test = dataset.X[test_index], dataset.y[test_index]
+
+    print("Dataset sizes (train, val, test): ", X_train.shape, X_val.shape, X_test.shape)
 
     # Impute numerical features
     if impute:

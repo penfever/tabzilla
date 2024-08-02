@@ -168,7 +168,8 @@ class BaseModelTorch(BaseModel):
 
     def predict_proba(self, X: np.ndarray) -> np.ndarray:
         probas = self.predict_helper(X)
-
+        print("Probas shape:", probas.shape)
+        print("probase type:", type(probas))
         # If binary task returns only probability for the true class, adapt it to return (N x 2)
         if probas.shape[1] == 1:
             probas = np.concatenate((1 - probas, probas), 1)

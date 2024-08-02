@@ -178,6 +178,12 @@ def get_DANet():
 
     return model
 
+@register_model("torch")
+def get_ExcelFormer():
+    from models.excelformer import ExcelFormer as model
+
+    return model
+
 # not implemented yet.
 # @register_model("torch")
 # def get_Hopular_model():
